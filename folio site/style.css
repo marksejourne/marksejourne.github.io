@@ -1,0 +1,16 @@
+#title {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	/* width: 100px; */
+	float: left;
+}
+
+#descrip {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	width: 10px;
+	height: 10px;
+	float: right;
+}
