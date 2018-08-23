@@ -1,134 +1,109 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
 <html>
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-
-    <title>Mark Sejourne</title>
-    <meta name="description" content="Mark Séjourné is a sophomore at Brown University studying
-    computer science and visual art.">
-    <meta name="keywords" content="Designer, UX, UI, User Interaction, User Experience,
-    Interaction Designer, Graphic Design, Portfolio, Brown University, Computer Science,
-    Interdisciplinary, Web Design">
-
-    <style>
-    #name{
-        float:left;
-        padding-left:40px;
-        padding-top:40px;
-        max-width: : 100%;
-    }
-
-    #descrip{
-        float:right;
-        padding-right:40px;
-        padding-top:40px;
-        max-width: : 100%;
-    }
-
-    #intro{
-        float:center;
-        margin: auto;
-    }
-
-    #hack{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    #criticalreview{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    #data{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    #wocks{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    #multimedia{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    #fineart{
-        padding-left: 75px;
-        cursor: pointer;
-    }
-    body {
-        font-family: 'Crimson Text', serif;
-        font-size: 20px;
-        font-weight:600;
-    }
-    </style>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style/landing.css">
 </head>
 
-
 <body>
-    <a href="index">
-        <img src="name.png" alt="MARK SÉJOURNÉ" style="padding-top:30px;
-        padding-bottom:10%;padding-left:40px;float:left;width:17%;">
-    </a>
 
-    <a href="https://www.linkedin.com/in/mark-sejourne/">
-        <img src="descrip.png" alt="Designer & Developer" style="padding-top:30px;
-        padding-bottom:10%;padding-right:40px;float:right;width:17%">
-    </a>
-    <br>
+    <div id="topbar"></div>
+    <div id="bottombar"></div>
 
-    <div id = intro>
-        <img src="intro.png" alt="Intro" style="width:100%;padding-bottom:10%">
+
+    <div class="navbar">
+        <div class="navhelper">
+            <img id="logo" src="images/logo.png" alt="MS">
+            <div id="overflowline"></div>
+            <nav>
+                <ul id="nav_ul">
+                    <li class="navlink"><a class="menulink"href="/">ABOUT</a></li>
+                    <li class="navlink"><a class="menulink"href="/">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!-- <br> -->
 
-    <div id = hack>
-        <a href="hack">
-            <img src='coverphotos/hackBG.jpg' onmouseover="this.src='coverphotos/hackRO.jpg';" onmouseout="this.src='coverphotos/hackBG.jpg';" style="width:80%;cursor:pointer;" />
+    <div id="vertline">
+        <div id="opener">
+            <p class="rotate"> Hello! </p>
+            <div id="introduction">
+
+                <span id="namespan">Mark Séjourné</span>
+                <br>
+                <span id="infospan">is a designer and developer currently studying
+                    Computer Science and Design at Brown University.</span>
+                </div>
+
+                <br>
+                <div id="servicesdiv">
+                    <div class="threecols" id="leftdiv">
+                        <img class="service-icon" id="eye" src="images/vision.png" alt="Eye Icon">
+                        <span class="servetitle">Branding + Graphic Design</span>
+                        <span class="servebody">Digital / Print Art Direction + Brand Strategy</span>
+
+                    </div>
+                    <div class="threecols" id="middlediv">
+                        <img class="service-icon" id="eye" src="images/techdesign.png" alt="Web Design Icon">
+                        <span class="servetitle">Web + App Design</span>
+                        <span class="servebody">Experience + Interaction + Interface Design</span>
+                    </div>
+                    <div class="threecols" id="rightdiv">
+                        <img class="service-icon" id="dev" src="images/dev.png" alt="Coding Icon">
+                        <span class="servetitle">Full-Stack Development</span>
+                        <span class="servebody">HTML + CSS + JS + React.js + Node.js + Java + C + Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="infodesign.html">
+            <div class="workcategory">
+                <p class="rotate"> Data </p>
+                <span class="worktitlespan">Information Design</span>
+                <img class="worksample" id="datavis" src="images/panelsphilippines.png" alt="Philippines Data Visualizations">
+            </div>
         </a>
-    </div>
-    <br>
+            <br>
 
-    <div id = criticalreview>
-        <a href="criticalreview">
-            <img src='coverphotos/critBG.jpg' onmouseover="this.src='coverphotos/critRO.jpg';" onmouseout="this.src='coverphotos/critBG.jpg';" style="width:80%;cursor:pointer;" />
-        </a>
-    </div>
-    <br>
+            <div class="workcategory">
+                <p class="rotate"> Hack </p>
+                <span class="worktitlespan">Hack@Brown</span>
+                <img class="worksample" id="hack" src="images/lightstepbanner.png" alt="Hack@Brown Work Sample">
+            </div>
+            <br>
 
-    <br>
-    <div id = wocks>
-        <a href="wocks">
-            <img src='coverphotos/jabberwocksBG.jpg' onmouseover="this.src='coverphotos/jabberwocksRO.jpg';" onmouseout="this.src='coverphotos/jabberwocksBG.jpg';"style="width:80%;" />
-        </a>
-    </div>
-    <br>
+            <div class="workcategory">
+                <p class="rotate"> The CR </p>
+                <span class="worktitlespan">The Critical Review</span>
+                <img class="worksample" id="critreview" src="images/CRmocks.png" alt="Philippines Data Visualizations">
+            </div>
+            <br>
 
-    <div id = data>
-        <a href="datavis">
-            <img src='coverphotos/infoBG.jpg' onmouseover="this.src='coverphotos/infoRO.jpg';" onmouseout="this.src='coverphotos/infoBG.jpg';" style="width:80%;cursor:pointer;" />
-        </a>
-    </div>
-    <br>
+            <div class="workcategory">
+                <p class="rotate"> HYPR </p>
+                <span class="worktitlespan">HYPR CORP</span>
+                <img class="worksample" id="hypr" src="images/hyprsample.png" alt="Philippines Data Visualizations">
+            </div>
+            <br>
+
+            <div class="workcategory">
+                <p class="rotate"> Wocks </p>
+                <span class="worktitlespan">Jabberwocks</span>
+                <img class="worksample" id="wocks" src="images/wockssample.png" alt="Philippines Data Visualizations">
+            </div>
 
 
-
-    <br>
-    <div id = multimedia>
-        <a href="multimedia">
-            <img src='coverphotos/multimediaBG.jpg' onmouseover="this.src='coverphotos/multimediaRO.jpg';" onmouseout="this.src='coverphotos/multimediaBG.jpg';"style="width:80%;" />
-        </a>
-    </div>
-    <br>
-
-    <br>
-    <div id = fineart>
-        <a href="fineart">
-            <img src='coverphotos/fineartBG.jpg' onmouseover="this.src='coverphotos/fineartRO.jpg';" onmouseout="this.src='coverphotos/fineartBG.jpg';"style="width:80%;" />
-        </a>
-    </div>
-    <br>
-    <div style="margin-left:15%;margin-right:15%;padding-top:5%;padding-bottom:5%;float:center;text-align:center;vertical-align:middle;">
-        Resume and overview of past coding projects available upon request: mark_sejourne@brown.edu
         </div>
 
-</body>
-</html>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/landing.js"></script>
+    </body>
+    </html>
