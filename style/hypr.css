@@ -1,0 +1,222 @@
+body {
+    background-color: #7664FB;
+    background-image: url(../images/hypr/isometriclines.svg);
+    /* background-position: 0px 100px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.navhelper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nav {
+    float: right;
+    margin: 0;
+}
+
+#nav_ul {
+    float: right;
+}
+
+.navlink {
+    font-size: 14px;
+    display: inline;
+    margin:18px;
+    color: #27262C;
+}
+
+.menulink {
+    color: #27262C;
+}
+
+#logo {
+    float: left;
+    /* display: block; */
+    height: auto;
+    width: auto;
+    max-width: 70px;
+}
+
+/* LINK COLOR CONTROL */
+a {
+    color: #27262C;
+    text-decoration: none;
+}
+
+.navlink a:hover{
+    color: #5D5AE8;
+}
+
+a:active {
+    color: #27262C;
+}
+
+a:visited {
+    color: #27262C;
+}
+
+#headerdiv {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#titlespan {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    color: #27262C;
+    /* display: block;/ */
+    text-transform: uppercase;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#descripspan {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #27262C;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.sepcontainer {
+    width: 100%;
+}
+
+.sep1 {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    /* margin: auto; */
+}
+
+.sep2 {
+    width: 78%;
+    margin-left: 11%;
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.project {
+    display: flex;
+    width: 84%;
+    /* position: relative; */
+    /* padding-top: 10%; */
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.col {
+    flex: 1; /*grow*/
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+#tripstextdiv {
+    text-align: left;
+    /* padding-left: 20px; */
+}
+
+#processtextdiv {
+    text-align: left;
+}
+
+.projnamespan {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.projdescrip {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#tripsimg {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#processimg {
+    width: 95%;
+    /* margin: 0 auto; */
+}
+
+#turq {
+        color: #399B77;
+        font-weight: 500;
+}
+#yellow {
+        color: #D8A200;
+        font-weight: 500;
+}
+#red {
+        color: #E30067;
+        font-weight: 500;
+}
+
+.listhead {
+    font-weight: 500;
+    /* font-size: 16px; */
+}
+
+#tripsdrafts {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#processdrafts {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#philippinesproject {
+    display: block;
+    width: 84%;
+    /* position: relative; */
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.philippinesimg {
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 850px) { /*breakpoint*/
+    .project {
+        flex-direction: column-reverse;
+        /* flex-direction: column; */
+    }
+    #descripspan {
+        width: 70%;
+    }
+    #tripsdrafts {
+        padding-bottom: 30px;
+    }
+    #processdrafts {
+        padding-bottom: 30px;
+    }
+}
