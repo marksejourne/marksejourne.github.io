@@ -236,7 +236,9 @@ a:visited {
     #bannertitle {
         padding-top: 40px;
     }
-
+    #gearimg {
+        margin-top: 20px;
+    }
     #flyingimg {
         width: 90%;
     }
