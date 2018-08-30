@@ -200,8 +200,6 @@ a:visited {
     margin-top: -50px;
 }
 
-
-
 #websitebanners {
     margin-top: 50px;
 }
@@ -244,6 +242,7 @@ a:visited {
     }
     #overviewdiv {
         top: 105%;
+        z-index: -3;
     }
     #styleguide {
         margin-bottom: 15px;
