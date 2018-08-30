@@ -236,15 +236,13 @@ a:visited {
     #bannertitle {
         padding-top: 40px;
     }
-    #gearimg {
-        padding-top: 20px;
-    }
     #flyingimg {
         width: 90%;
     }
     #overviewdiv {
         top: 105%;
         z-index: -3;
+        padding-top: 20px;
     }
     #styleguide {
         margin-bottom: 15px;
