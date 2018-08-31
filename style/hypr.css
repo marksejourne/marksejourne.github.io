@@ -1,6 +1,7 @@
 body {
     background-color: #7664FB;
     background-image: url(../images/hypr/isometriclines.svg);
+    background-attachment: fixed;
     /* background-position: 0px 100px; */
     background-size: 100%;
     background-repeat: no-repeat;
@@ -9,6 +10,7 @@ body {
     font-style: normal;
     font-weight: normal;
     width: 100%;
+    overflow-x: hidden;
     /* height: 100%; */
 }
 
@@ -36,11 +38,11 @@ body {
     font-size: 14px;
     display: inline;
     margin:18px;
-    color: #27262C;
+    color: #FDFBFB;
 }
 
 .menulink {
-    color: #27262C;
+    color: #FDFBFB;
 }
 
 #logo {
@@ -53,33 +55,49 @@ body {
 
 /* LINK COLOR CONTROL */
 a {
-    color: #27262C;
+    color: #FDFBFB;
     text-decoration: none;
 }
 
 .navlink a:hover{
-    color: #5D5AE8;
+    color: #FECA30;
 }
 
 a:active {
-    color: #27262C;
+    color: #FDFBFB;
 }
 
 a:visited {
-    color: #27262C;
+    color: #FDFBFB;
 }
 
-#headerdiv {
-    width: 100%;
-    padding-top: 40px;
-    text-align: center;
+#isointrodiv {
+    margin-top: 10vh;
+    /* background-image: url(../images/hypr/isometricills.png);
+    background-position: center bottom;
+    background-size: 90%; */
+    /* height: 100vh; */
+    /* background-repeat: no-repeat; */
+    overflow: visible;
+}
+
+#openerdescription {
+    width: 55%;
+    display: block;
+}
+
+#isoillsimg {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -50px;
+    display: block;
 }
 
 #titlespan {
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
-    font-weight: 900;
-    color: #27262C;
+    font-weight: 800;
+    color: #FDFBFB;
     /* display: block;/ */
     text-transform: uppercase;
     /* text-align: center; */
@@ -89,35 +107,15 @@ a:visited {
 #descripspan {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color: #27262C;
+    font-weight: 400;
+    color: #FDFBFB;
     display: block;
-    margin: 0 auto;
-    width: 40%;
-}
-
-.sepcontainer {
-    width: 100%;
-}
-
-.sep1 {
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 30px;
-    padding-bottom: 70px;
-
-    /* margin: auto; */
-}
-
-.sep2 {
-    width: 78%;
-    margin-left: 11%;
-    padding-top: 70px;
-    margin-bottom: 70px;
+    /* margin: 0 auto; */
+    /* width: 40%; */
 }
 
 .project {
-    display: flex;
+    /* display: flex; */
     width: 84%;
     /* position: relative; */
     /* padding-top: 10%; */
@@ -128,95 +126,25 @@ a:visited {
 .col {
     flex: 1; /*grow*/
     /* border: 1px solid; */
-    text-align: center;
+    /* text-align: center; */
 }
 
-#tripstextdiv {
-    text-align: left;
-    /* padding-left: 20px; */
-}
-
-#processtextdiv {
-    text-align: left;
-}
-
-.projnamespan {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.projdescrip {
-    width: 95%;
-    margin: 0 auto;
-}
-
-#tripsimg {
-    width: 95%;
-    margin: 0 auto;
-}
-
-#processimg {
-    width: 95%;
-    /* margin: 0 auto; */
-}
-
-#turq {
-        color: #399B77;
-        font-weight: 500;
-}
-#yellow {
-        color: #D8A200;
-        font-weight: 500;
-}
-#red {
-        color: #E30067;
-        font-weight: 500;
-}
-
-.listhead {
-    font-weight: 500;
-    /* font-size: 16px; */
-}
-
-#tripsdrafts {
-    width: 100%;
-    padding-top: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#processdrafts {
-    width: 100%;
-    padding-top: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#philippinesproject {
-    display: block;
-    width: 84%;
-    /* position: relative; */
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.philippinesimg {
-    width: 100%;
-    padding-top: 20px;
-}
-
-@media only screen and (max-width: 850px) { /*breakpoint*/
-    .project {
-        flex-direction: column-reverse;
-        /* flex-direction: column; */
+@media only screen and (max-width: 1030px) { /*breakpoint*/
+    #openerdescription {
+        width: 80%;
     }
-    #descripspan {
-        width: 70%;
+    #isoillsimg {
+        margin-top: 10px;
     }
-    #tripsdrafts {
-        padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 750px) { /*breakpoint*/
+    #openerdescription {
+        width: 100%;
     }
-    #processdrafts {
-        padding-bottom: 30px;
+    #isoillsimg {
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 30px;
     }
 }
