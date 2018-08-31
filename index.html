@@ -25,12 +25,26 @@
             <nav>
                 <ul id="nav_ul">
                     <li class="navlink"><a class="menulink"href="#">ABOUT</a></li>
-                    <li class="navlink"><a class="menulink"href="#">CONTACT</a></li>
+                    <li class="navlink"><a id="myBtn" class="menulink">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <!-- <br> -->
+
+    <!-- CONTACT POPUP -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <div id="vertline">
         <div id="opener">
@@ -107,8 +121,34 @@
         </div>
 
 
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/landing.js"></script>
-    </body>
-    </html>
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/landing.js"></script>
+</body>
+</html>
