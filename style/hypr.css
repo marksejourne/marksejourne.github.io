@@ -229,10 +229,21 @@ form {
 }
 
 @media only screen and (max-width: 750px) { /*breakpoint*/
-    #openerdescription {
+    body {
+        background-repeat: repeat-y;
+        overflow-x: hidden;
+    }
+    #isointrodiv {
+        overflow-x: hidden;
         width: 100%;
     }
+
+    #openerdescription {
+        width: 80%;
+        margin: 0 auto;
+    }
     #isoillsimg {
+        overflow-x: hidden;
         width: 150%;
         margin-left: -25%;
         margin-top: 30px;
