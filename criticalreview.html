@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style/criticalreview.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navhelper">
+            <a href="index.html">
+            <img id="logo" src="images/logo.png" alt="MS">
+        </a>
+            <nav>
+                <ul id="nav_ul">
+                    <li class="navlink"><a class="menulink"href="#">ABOUT</a></li>
+                    <li class="navlink"><a class="menulink"id="myBtn">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTACT POPUP -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="headerdiv">
+        <span id="titlespan">The Critical Review</span> <br>
+        <span id="descripspan">I redesigned and worked with a team of other
+            students to develop a new website for Brown's Critical Review,
+            a course review publication which was established in 1976.</span>
+            <br>
+            <span id="thinnerspan">
+            I used Illustrator, Figma, and Sketch to execute the site's art direction / branding.
+            The site's development incorporated Node.js, Express, MySQL,
+            Passport.js, EJS, D3, HTML, CSS, and Shibboleth.
+            <br><br>
+            Updates coming soon, but for now, check out our <a style="color:#5D5AE8;"href="https://github.com/kevinli96/BrownCR">GitHub documentation</a>.
+        </span>
+    </div>
+
+
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</body>
+</html>
