@@ -236,9 +236,9 @@ input {
     margin-bottom: 15px;
     padding: 5px;
     min-height: 20px;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: transparent;
-    color: white;
+    color: black;
 }
 
 textarea {
@@ -247,15 +247,15 @@ textarea {
     width: 90%;
     min-height: 100px;
     margin-bottom: 15px;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: transparent;
-    color: white;
+    color: black;
 }
 
 textarea, select, input, button { outline: none; }
 
 ::placeholder {
-    color: white;
+    color: black;
 }
 
 button {
@@ -274,7 +274,7 @@ button {
 /* Modal Content */
 .modal-content {
 float: right;
-    background-color: #F74B3B;
+    background-color: #FECA30;
     padding: 30px;
     /* border: 1px solid #888; */
     border-radius: 20px;
@@ -288,7 +288,7 @@ form {
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -296,7 +296,7 @@ form {
 
 .close:hover,
 .close:focus {
-    color: #FECA30;
+    color: #F74B3B;
     text-decoration: none;
     cursor: pointer;
 }
