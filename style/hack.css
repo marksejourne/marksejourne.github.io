@@ -7,7 +7,7 @@ html {
 body {
     background-color: #011D33;
     font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: normal;
     margin: 0;
@@ -15,6 +15,15 @@ body {
 
 p {
     color: #f0f0f0;
+    padding-bottom: 10px;
+}
+
+ul {
+    color: #f0f0f0;
+    margin-left: 30px;
+}
+
+li {
     padding-bottom: 10px;
 }
 
@@ -95,6 +104,26 @@ a:visited {
     margin: 0 auto;
 }
 
+.missiontitle {
+    font-size: 30px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #f0f0f0;
+    /* text-transform: uppercase; */
+    margin: 0 auto;
+}
+
+#missiontext {
+    font-size: 20px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: #f0f0f0;
+    /* text-transform: uppercase; */
+    margin: 0 auto;
+}
+
 #descripspan {
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
@@ -167,6 +196,13 @@ a:visited {
     /* position: relative; */
     margin: 0 auto;
     /* overflow: auto; */
+    margin-bottom: 100px;
+}
+
+.projectnoflex {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .col {
@@ -325,7 +361,6 @@ form {
     #websitecolumn {
         margin-bottom: 100px;
     }
-
     #bannertitle {
         padding-top: 40px;
     }
