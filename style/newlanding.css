@@ -311,20 +311,26 @@ nav a {
     cursor: pointer;
 }
 
-#lovetriangle-proj:hover {
+#jabberwocks-proj:hover {
     background-color: #323232;
     color: #fafafa;
     cursor: pointer;
 }
 
-#countrydata-proj:hover {
-    background-color: #4056AF;
+#lovetriangle-proj:hover {
+    background-color: #4056af;
     color: #fafafa;
     cursor: pointer;
 }
 
+#countrydata-proj:hover {
+    background-color: #f9ae34;
+    color: #323232;
+    cursor: pointer;
+}
+
 #oldportolio-proj:hover {
-    background-color: #F9AE34;
+    background-color: #E68599;
     color: #323232;
     cursor: pointer;
 }
@@ -445,16 +451,89 @@ a {
 
 @media only screen and (max-width: 850px) { /*breakpoint*/
     nav {
+        padding-left: 0px;
+        padding-right: 0px;
+
         padding-bottom: 20px;
     }
+
+    .oval {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #white-oval {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+    #blue-oval {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+    #yellow-oval {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+    #pink-oval {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+    #green-oval {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+
+    #oval-ul {
+        margin: 0 auto;
+        padding: 0px;
+        width: 90%;
+    }
+
+    .navtitle {
+        width: auto;
+    }
+
+    html {
+        overlow-x: none;
+    }
+
     .intro-splash {
         flex-direction: column;
         /* flex-direction: column; */
         /* height: 70vh; */
     }
+    nav {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    nav .nav {
+        padding: 0px;
+    }
     .big-text {
-        font-size: 8vw;
-        width: 80%;
+        font-size: 10vw;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #big-text-container {
+        width: 90%;
+        margin: 0 auto;
     }
 
     #oval-ul {
