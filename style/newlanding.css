@@ -1,0 +1,492 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+}
+
+
+@font-face {
+    font-family: 'juni-boldcondensed';
+    src: url("fonts/junicode-boldcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular';
+    src: url("fonts/junicode-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-bold';
+    src: url("fonts/junicode-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular-condensed';
+    src: url("fonts/junicode-regularcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-italic-condensed';
+    src: url("fonts/junicode-italiccondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blocus';
+    src: url("fonts/blocuswebfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* TYPE HIERARCHY */
+h1 {
+    /* font-family: benton-sans, sans-serif; */
+    /* font-family: 'Inter var', sans-serif; */
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin:0;
+    padding: 0;
+}
+
+/* TOP NAVIGATION MENU  */
+nav {
+    padding: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 80px;
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-bold';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    color: #323232;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.navtitle {
+    width: 200px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+
+/* //////////////////////////////// */
+.intro-splash {
+    height: 68vh;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+#big-text-container {
+    /* width: 70%; */
+    flex: 0 0 65%;
+    /* border: 1px solid; */
+
+}
+
+#ovals-div {
+    /* width: 40%; */
+    flex: 0 0 35%;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+#oval-ul {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    list-style: none;
+}
+
+
+.big-text {
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-boldcondensed';
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 95%;
+    /* or 81px */
+    letter-spacing: -0.0025em;
+
+    color: #323232;
+    padding-left: 60px;
+    margin: 10px;
+    padding-top: 0px;
+    /* width: 60%; */
+}
+
+.big-text a {
+    text-decoration: none;
+    color: #323232;
+}
+
+.big-text a:hover {
+    padding: 20px;
+    font-family: 'blocus';
+    text-decoration: none;
+    color: #323232;
+}
+
+.oval {
+    height: 23px;
+    width: 235px;
+    border-radius: 50%;
+    margin-right: 105px;
+    margin-bottom: 15px;
+    border: 1px solid #323232;
+    cursor: pointer;
+}
+
+#white-oval {
+    background: #F5F5F5;
+}
+
+#blue-oval {
+    background: #4056AF;
+}
+
+#yellow-oval {
+    background: #F9AE34;
+}
+
+#pink-oval {
+    background: #E68599;
+}
+
+#green-oval {
+    background: #19706A;
+}
+
+
+
+/* //////////////////////////////// */
+
+#work-header {
+    padding-left: 70px;
+    /* padding-top: 90vh; */
+    position: absolute;
+    top: -60px;
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-regular';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    color: #323232;
+
+}
+
+.project-container {
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    /* border-bottom: 1px solid rgba(0, 0, 0, .5); */
+    min-height: 250px;
+    color: #323232;
+    flex: 1;
+    position: relative;
+
+    /* position: relative; */
+
+    /* transition: all .2s ease-in-out; */
+}
+
+/* img {
+    display: none;
+    width: 30%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+} */
+
+/* .project-container:hover img { */
+  /* display: inline; */
+  /* float: right; */
+/* } */
+
+/* .project-container:hover { transform: scale(1.05); } */
+
+#allprojects {
+    position: relative;
+    bottom: -100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.project-title {
+    font-family: 'juni-regular-condensed';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    padding-left: 70px;
+    margin-top: 55px;
+    margin-bottom: 0px;
+    /* color: #323232; */
+}
+
+.project-descrip {
+    font-family: 'juni-regular';
+    font-size: 20px;
+    padding-left: 70px;
+    margin-top: -15px;
+    width: 50%;
+    /* color: #323232; */
+}
+
+/* .GeneratedMarquee { */
+    /* font-family:'juni-boldcondensed'; */
+    /* font-size:1.5em; */
+    /* color:#f5f5f5; */
+    /* background-color:#323232; */
+    /* position: absolute; */
+    /* top: -0px; */
+    /* text-align: left; */
+
+    /* padding:1.5em; */
+/* } */
+
+#atlassian-proj:hover {
+    /* width: 100%; */
+    background-color: #4056AF;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+#queer-proj:hover {
+    /* width: 100%; */
+    background-color: #F9AE34;
+    color: #323232;
+    cursor: pointer;
+}
+
+#CR-proj:hover {
+    background-color: #E68599;
+    color: #323232;
+    cursor: pointer;
+}
+
+#hack19-proj:hover {
+    background-color: #19706A;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+#lovetriangle-proj:hover {
+    background-color: #323232;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+#countrydata-proj:hover {
+    background-color: #4056AF;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+#oldportolio-proj:hover {
+    background-color: #F9AE34;
+    color: #323232;
+    cursor: pointer;
+}
+
+.div-link {
+    text-decoration: none;
+
+}
+
+/* CONTACT MODAL STYLING */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    z-index: 100;
+
+}
+
+input {
+	display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 5px;
+    min-height: 20px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea {
+	display: block;
+    padding: 5px;
+    width: 90%;
+    min-height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea, select, input, button {
+    outline: none;
+    font-family: 'juni-regular';
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #323232;
+}
+
+button {
+    float: right;
+    margin-right: 10%;
+    background-color: #323232;
+    border-radius: 0;
+    border: none;
+    color: white;
+    padding: 10px;
+    min-width: 60px;
+    cursor: pointer;
+    /* padding-left, padding-right: 7px; */
+}
+
+/* Modal Content */
+.modal-content {
+float: right;
+    background-color: #fafafa;
+    border: 1px solid #323232;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    /* border-radius: 20px; */
+    width: 40%;
+    margin-right: 30px;
+}
+
+form {
+	margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+    color: #323232;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #E68599;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+
+/* BREAKPOINT SPECIFICATIONS */
+@media only screen and (min-width: 1400px) {
+    .big-text{
+        /* font-size: 90px; */
+    }
+}
+
+@media only screen and (max-width: 850px) { /*breakpoint*/
+    nav {
+        padding-bottom: 20px;
+    }
+    .intro-splash {
+        flex-direction: column;
+        /* flex-direction: column; */
+        /* height: 70vh; */
+    }
+    .big-text {
+        font-size: 8vw;
+        width: 80%;
+    }
+
+    #oval-ul {
+        position: absolute;
+        bottom: -20px;
+        right: none;
+        float: none;
+    }
+    .oval {
+        height: 2.5vh;
+        width: 60vw;
+        border-radius: 50%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        border: 1px solid #323232;
+        cursor: pointer;
+    }
+    .project-title {
+        line-height: 95%;
+        margin-bottom: 5px;
+    }
+    .project-descrip {
+        line-height: 95%;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+
+
+/* #atlassian-proj:hover h1{
+    font-family: 'juni-italic-condensed';
+} */

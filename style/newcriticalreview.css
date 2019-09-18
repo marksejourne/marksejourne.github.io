@@ -1,0 +1,381 @@
+
+
+
+@font-face {
+    font-family: 'juni-boldcondensed';
+    src: url("fonts/junicode-boldcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular';
+    src: url("fonts/junicode-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-bold';
+    src: url("fonts/junicode-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular-condensed';
+    src: url("fonts/junicode-regularcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-italic-condensed';
+    src: url("fonts/junicode-italiccondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* TOP NAVIGATION MENU  */
+nav {
+    padding: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 80px;
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-bold';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    color: #323232;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navtitle {
+    width: 200px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+body {
+    background-color: #E68599;
+    color: #323232;
+}
+
+/* h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+} */
+
+#titlespan {
+    font-family: 'juni-regular-condensed';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 15px;
+    /* color: #323232; */
+}
+
+////////
+
+
+.project-title {
+    font-family: 'juni-regular-condensed';
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    font-size: 60px;
+    margin: auto;
+    margin-top: 15px;
+    /* color: #323232; */
+}
+
+.lil-heading {
+    font-family: 'juni-bold';
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+.answers {
+    font-family: 'juni-regular';
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+#headerdiv {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#openerdiv1 {
+    margin-top: 50px;
+    margin-right: 10%;
+}
+
+#openerdiv {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#thinnerspan {
+    font-family: 'juni-regular';
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 20px;
+    color: #323232;
+    /* display: block; */
+    margin: 0 auto;
+    /* width: 90%; */
+    padding-top: 20px;
+
+}
+
+#videocontainer {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.sep1 {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 30px;
+}
+
+iframe {
+    float: none;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    width: 80%;
+    /* position: relative; */
+    /* padding-top: 10%; */
+    margin: 0 auto;
+    /* overflow: auto; */
+}
+
+.col {
+    flex: 1; /*grow*/
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+#openertextdiv {
+    text-align: left;
+    vertical-align: top;
+
+    /* padding-left: 20px; */
+}
+#thirty {
+    text-align: left;
+    vertical-align: top;
+    flex: 0 0 30%;
+    /* padding-left: 20px; */
+}
+#seventy {
+    flex: 0 0 70%
+}
+
+#processtextdiv {
+    text-align: left;
+}
+
+.projnamespan {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.projdescrip {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#mobilemocks {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#fullspantext {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 70%;
+}
+
+#processimg {
+    width: 95%;
+    /* margin: 0 auto; */
+}
+
+.listhead {
+    font-weight: 500;
+    /* font-size: 16px; */
+}
+
+
+#processdrafts {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#philippinesproject {
+    display: block;
+    width: 84%;
+    /* position: relative; */
+    margin: 0 auto;
+    /* overflow: auto; */
+}
+
+.philippinesimg {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* CONTACT MODAL STYLING */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    z-index: 100;
+
+}
+
+input {
+	display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 5px;
+    min-height: 20px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea {
+	display: block;
+    padding: 5px;
+    width: 90%;
+    min-height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea, select, input, button {
+    outline: none;
+    font-family: 'juni-regular';
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #323232;
+}
+
+button {
+    float: right;
+    margin-right: 10%;
+    background-color: #323232;
+    border-radius: 0;
+    border: none;
+    color: white;
+    padding: 10px;
+    min-width: 60px;
+    cursor: pointer;
+    /* padding-left, padding-right: 7px; */
+}
+
+/* Modal Content */
+.modal-content {
+float: right;
+    background-color: #fafafa;
+    border: 1px solid #323232;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    /* border-radius: 20px; */
+    width: 40%;
+    margin-right: 30px;
+}
+
+form {
+	margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+    color: #323232;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #E68599;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) { /*breakpoint*/
+    .project {
+        flex-direction: column-reverse;
+        /* flex-direction: column; */
+    }
+    #descripspan {
+        width: 70%;
+    }
+    #mobilemocks {
+        padding-top: 30px;
+    }
+    #openerdiv1 {
+        margin-top: 50px;
+        margin-right: 10%;
+    }
+}

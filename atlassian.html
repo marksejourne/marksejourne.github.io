@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<html>
+<head>
+    <title>Mark Séjourné</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style/atlassian.css">
+</head>
+
+<body>
+    <!-- TOP NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="menulink"id="myBtn">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTACT POPUP -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col" id="phone-div">
+            <img src="images/atlassian/iphonex.png" id="phone-pic" alt="">
+        </div>
+        <div class="col" id="brief-div">
+            <h1 class="project-title blue">Atlassian</h1>
+            <p class="lil-heading">Role:</p>
+            <p class="answers">Design Intern</p>
+
+            <p class="lil-heading">Timeline:</p>
+            <p class="answers">Summer 2019 (12 weeks)</p>
+
+            <p class="lil-heading">Responsibilities:</p>
+            <p class="answers">User research, competitive analysis, iterative design, prototyping, motion design & microinteractions</p>
+
+            <p class="lil-heading">Tools:</p>
+            <p class="answers">Sketch, Invision, Principle, Illustrator, whiteboard, marker, sticky notes, sticky notes, sticky notes</p>
+        </div>
+    </div>
+
+    <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
+    <div class="disclaimer-div">
+        <p class="disclaimer">While I am unable to publicly present my final
+            designs for Atlassian at this time, I have
+            documented as much of my process as possible
+            below. Please reach out via my Contact page
+            if you’d like to hear more about my work on
+            the Confluence app.</p>
+    </div>
+
+    <div class="bodycontent-div">
+        <h2>Context</h2>
+        <p class="body-p">Confluence is a content collaboration tool used to help teams
+            collaborate and share knowledge efficiently. You can read more
+            about the product’s specific capabilities and features
+            <a class="confl-link" href="https://www.atlassian.com/software/confluence?=undefined&aceid=&adposition=1t1&adgroup=56762718378&campaign=1398156449&creative=377209412295&device=c&keyword=confluence&matchtype=e&network=g&placement=&ds_kids=p32969177752&ds_e=GOOGLE&ds_eid=700000001542923&ds_e1=GOOGLE&gclid=EAIaIQobChMI5IG_rqvP5AIV0cDICh2sJQJaEAAYASAAEgJUrvD_BwE&gclsrc=aw.ds">here.</a> </p>
+
+        <h2>Process Overview</h2>
+        <p class="body-p">I was asked to focus on the Confluence mobile experience. My process
+            began with a comprehensive evaluation of the app’s functionality
+            across platforms and devices. I then dug into research/metrics in
+            order to develop personas, map their most common journeys, identify
+            pain points, and ideate solutions. I worked with mobile developers
+            to weigh anticipated impacts of each solution against the cost to
+            implement it, and prioritized my list of problems/solutions.
+            <br> <br>
+            Upon identifying the problem I would be designing for, I conducted
+            a competitive analysis of how other products handle similar user needs.
+            I began ideating, sketching, mocking up, prototyping, and iterating.
+            Along the way, I worked to prioritize accessibility best practices,
+            I restructured information, collaborated with copywriters, altered
+            visuals, designed new icons when necessary, and checked in regularly
+            with the Atlassian Design Guidelines Team to be sure my work was ADG
+            compliant.</p>
+
+        <h2>Result</h2>
+        <p class="body-p">I ended up creating a feature that I’m super excited to see roll out
+            in the coming months. It capitalizes on mobile capabilities in order
+            to reduce user anxiety related to on-the-go page creation. It
+            challenges desktop-first mental models and truly takes mobile users’
+            needs into account.
+            <br><br>
+            Again, I would be happy to speak further about this project privately.
+            Please reach out via my Contact page above. </p>
+    </div>
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+
+
+    </body>

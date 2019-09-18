@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<html>
+<head>
+    <title>Mark Séjourné</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style/newcriticalreview.css">
+</head>
+
+<body>
+    <!-- <div class="navbar">
+        <div class="navhelper">
+            <a href="index.html">
+            <img id="logo" src="images/whitelogo.png" alt="MS">
+        </a>
+            <nav>
+                <ul id="nav_ul">
+                    <li class="navlink"><a class="menulink"id="myBtn">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> -->
+
+
+    <!-- TOP NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="menulink"id="myBtn">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- CONTACT POPUP -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="project" id="openerdiv1">
+        <div class="col left">
+            <img id="mobilemocks" src="images/criticalreview/mobilemocks.png">
+        </div>
+        <div class="col right" id="openertextdiv">
+            <span id="titlespan">The Critical Review</span> <br>
+            <!-- <h1 class="project-title">The Critical Review</h1> -->
+
+            <p class="projdescrip">
+                <!-- <span id="thinnerspan">In the spring of 2018, I redesigned and worked with a team of other
+                    students to develop a new website for Brown's Critical Review,
+                    a course review publication which was established in 1976.
+                    <br><br>
+                    The site's development incorporates Node.js, Express, MySQL,
+                    Passport.js, EJS, D3, HTML, CSS, and Shibboleth authentication.
+                    <br><br>
+                    Updates coming soon, but for now, check out our <a style="color:#323232;"href="https://github.com/kevinli96/BrownCR">GitHub documentation</a>.
+                </span> -->
+
+                <p class="lil-heading">Role:</p>
+                <p class="answers">Designer and Co-Developer</p>
+
+                <p class="lil-heading">Timeline:</p>
+                <p class="answers">Spring 2018 (9 weeks)</p>
+
+                <p class="lil-heading">Responsibilities:</p>
+                <p class="answers">Illustration, UX/UI, iterative design, prototyping, full-stack development</p>
+
+                <p class="lil-heading">Tools:</p>
+                <p class="answers">Sketchbook, Illustrator, Figma, Node.js, Express, MySQL,
+                Passport.js, EJS, D3, HTML, CSS, and Shibboleth authentication</p>
+        </p>
+        </div>
+    </div>
+
+    <div class="project"id="fullspantext">
+        <span id="thinnerspan">This Critical Review overhaul included both the public-facing publication,
+        and the internal management site, <span style="font-style:italic">Staff Central</span>.
+        <br>
+        <br>
+        Staff Central has multiple permission levels for all positions within
+        the student group. It allows writers to upload their summarized course
+        reviews, input the metrics from individual students (which are then
+        automatically processed into interactive D3 visualizations).
+    </span>
+    </div>
+
+    <div id="videocontainer">
+        <video height="auto" width="100%" poster="images/criticalreview/CRposter.png" autoplay="" loop="" muted="">
+        <source src="images/criticalreview/critreviewdemotrimmed.mov">
+        <p class="warning">Your browser does not support HTML5 video.</p>
+</video>
+
+    </div>
+
+    <div class="project" id="openerdiv">
+        <div class="col left" id="thirty">
+            <p class="projdescrip">
+                <span id="thinnerspan">
+                    The use of this site peaks twice a year, when it's time to choose classes.
+                    The CR team requested an "approachable and friendly" visual identity, to minimize
+                    the stress that often accompanies course selection.
+                    In planning the new art direction for the Critical Review,
+                    I wanted to centralize Brown University, as the publication is specific to this school.
+                    <br> <br>
+                    I've included examples of screens from the former site for comparison. It was
+                    less inviting, the data visualizations were difficult to interpret, and the interface was outdated and hard to navigate.
+                </span>
+        </p>
+        </div>
+        <div id="seventy"class="col right">
+            <img id="mobilemocks" src="images/criticalreview/oldsite.png">
+        </div>
+    </div>
+
+
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</body>
+</html>

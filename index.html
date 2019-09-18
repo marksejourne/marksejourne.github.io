@@ -7,31 +7,134 @@
 <head>
     <title>Mark Séjourné</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/landing.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gik0woe.css">
+    <link rel="stylesheet" type="text/css" href="style/newlanding.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#white-oval").click(function() {
+            $("body").css("backgroundColor", "#f5f5f5");
+            $(".project-container").css("backgroundColor", "#f5f5f5");
+            $("p").css("color", "#323232");
+            $("span").css("color", "#323232");
+            $("h1").css("color", "#323232");
+            $("a").css("color", "#323232");
+            $(".project-container").css("border-top", "1px solid #323232");
+            $("#atlassian-proj").mouseover(function(){$(this).css({"background-color": "#4056AF"})})
+            $("#atlassian-proj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".blueproj").mouseover(function(){$(this).css({"background-color": "#4056AF"})})
+            $(".blueproj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".yellowproj").mouseover(function(){$(this).css({"background-color": "#F9AE34"})})
+            $(".yellowproj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".pinkproj").mouseover(function(){$(this).css({"background-color": "#E68599"})})
+            $(".pinkproj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".greenproj").mouseover(function(){$(this).css({"background-color": "#19706A"})})
+            $(".greenproj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".blackproj").mouseover(function(){$(this).css({"background-color": "#323232"})})
+            $(".blackproj").mouseout(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".project-container").mouseover(function(){$(this).find(".blue").css("color","#f5f5f5")});
+            $(".project-container").mouseover(function(){$(this).find(".yellow").css("color","#323232")});
+            $(".project-container").mouseover(function(){$(this).find(".pink").css("color","#323232")});
+            $(".project-container").mouseover(function(){$(this).find(".green").css("color","#f5f5f5")});
+            $(".project-container").mouseover(function(){$(this).find(".black").css("color","#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+        });
+        $("#blue-oval").click(function() {
+            $("body").css("backgroundColor", "#4056AF");
+            $(".project-container").css("backgroundColor", "#4056af");
+            $("p").css("color", "#f5f5f5");
+            $("span").css("color", "#f5f5f5");
+            $("h1").css("color", "#f5f5f5");
+            $("a").css("color", "#f5f5f5");
+            $(".project-container").css("border-top", "1px solid #f5f5f5");
+            $(".project-container").mouseover(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".project-container").mouseout(function(){$(this).css({"background-color": "#4056AF"})})
+            $(".project-container").mouseover(function(){$(this).find(".blue").css("color","#4056AF")});
+            $(".project-container").mouseover(function(){$(this).find(".yellow").css("color","#F59125")});
+            $(".project-container").mouseover(function(){$(this).find(".pink").css("color","#E68599")});
+            $(".project-container").mouseover(function(){$(this).find(".green").css("color","#19706A")});
+            $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#f5f5f5")});
+        });
+        $("#yellow-oval").click(function() {
+            $("body").css("backgroundColor", "#F9AE34");
+            $(".project-container").css("backgroundColor", "#F9AE34");
+            $("p").css("color", "#323232");
+            $("span").css("color", "#323232");
+            $("h1").css("color", "#323232");
+            $("a").css("color", "#323232");
+            $(".project-container").css("border-top", "1px solid #323232");
+            $(".project-container").mouseover(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".project-container").mouseout(function(){$(this).css({"background-color": "#F9AE34"})})
+            $(".project-container").mouseover(function(){$(this).find(".blue").css("color","#4056AF")});
+            $(".project-container").mouseover(function(){$(this).find(".yellow").css("color","#F59125")});
+            $(".project-container").mouseover(function(){$(this).find(".pink").css("color","#E68599")});
+            $(".project-container").mouseover(function(){$(this).find(".green").css("color","#19706A")});
+            $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+        });
+        $("#pink-oval").click(function() {
+            $("body").css("backgroundColor", "#E68599");
+            $(".project-container").css("backgroundColor", "#e68599");
+            $("p").css("color", "#323232");
+            $("span").css("color", "#323232");
+            $("h1").css("color", "#323232");
+            $("a").css("color", "#323232");
+            $(".project-container").css("border-top", "1px solid #323232");
+            $(".project-container").mouseover(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".project-container").mouseout(function(){$(this).css({"background-color": "#E68599"})})
+            $(".project-container").mouseover(function(){$(this).find(".blue").css("color","#4056AF")});
+            $(".project-container").mouseover(function(){$(this).find(".yellow").css("color","#F59125")});
+            $(".project-container").mouseover(function(){$(this).find(".pink").css("color","#E68599")});
+            $(".project-container").mouseover(function(){$(this).find(".green").css("color","#19706A")});
+            $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+        });
+        $("#green-oval").click(function() {
+            $("body").css("backgroundColor", "#19706A");
+            $(".project-container").css("backgroundColor", "#19706a");
+            $("p").css("color", "#f5f5f5");
+            $("span").css("color", "#f5f5f5");
+            $("h1").css("color", "#f5f5f5");
+            $("a").css("color", "#f5f5f5");
+            $(".project-container").css("border-top", "1px solid #f5f5f5");
+            $(".project-container").mouseover(function(){$(this).css({"background-color": "#f5f5f5"})})
+            $(".project-container").mouseout(function(){$(this).css({"background-color": "#19706A"})})
+            $(".project-container").mouseover(function(){$(this).find(".blue").css("color","#4056AF")});
+            $(".project-container").mouseover(function(){$(this).find(".yellow").css("color","#F59125")});
+            $(".project-container").mouseover(function(){$(this).find(".pink").css("color","#E68599")});
+            $(".project-container").mouseover(function(){$(this).find(".green").css("color","#19706A")});
+            $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#f5f5f5")});
+        });
+    });
+    </script>
 </head>
 
 <body>
 
-    <div id="topbar"></div>
-    <div id="bottombar"></div>
-
-
-    <div class="navbar">
-        <div class="navhelper">
-            <a href="index.html">
-                <img id="logo" src="images/logo.png" alt="MS">
-            </a>
-            <div id="overflowline"></div>
-            <nav>
-                <ul id="nav_ul">
-                    <!-- <li class="navlink"><a class="menulink"href="#">ABOUT</a></li> -->
-                    <li class="navlink"><a id="myBtn" class="menulink">CONTACT</a></li>
+    <!-- TOP NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
                 </ul>
-            </nav>
-        </div>
-    </div>
-    <!-- <br> -->
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="menulink"id="myBtn">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- CONTACT POPUP -->
     <!-- The Modal -->
@@ -47,109 +150,120 @@
         </div>
     </div>
 
-    <div id="vertline">
-        <div id="opener">
-            <p class="rotate"> Hello! </p>
-            <div id="introduction">
-
-                <span id="namespan">Mark Séjourné</span>
-                <br>
-                <span id="infospan">is a designer and developer currently studying
-                    Computer Science and Design at Brown University.</span>
-                </div>
-
-                <br>
-                <div id="servicesdiv">
-                    <div class="threecols" id="leftdiv">
-                        <img class="service-icon" id="eye" src="images/vision.png" alt="Eye Icon">
-                        <span class="servetitle">Branding + Graphic Design</span>
-                        <span class="servebody">Digital / Print Art Direction + Brand Strategy</span>
-
-                    </div>
-                    <div class="threecols" id="middlediv">
-                        <img class="service-icon" id="eye" src="images/techdesign.png" alt="Web Design Icon">
-                        <span class="servetitle">Web + App Design</span>
-                        <span class="servebody">Experience + Interaction + Interface Design</span>
-                    </div>
-                    <div class="threecols" id="rightdiv">
-                        <img class="service-icon" id="dev" src="images/dev.png" alt="Coding Icon">
-                        <span class="servetitle">Full-Stack Development</span>
-                        <span class="servebody">HTML + CSS + JS + React.js + Node.js + Java + C + Python</span>
-                    </div>
-                </div>
-            </div>
-            <a href="hack.html">
-                <div class="workcategory">
-                    <p class="rotate"> Hack </p>
-                    <span class="worktitlespan">Hack@Brown</span>
-                    <img class="worksample" id="hack" src="images/lightstepbanner.png" alt="Hack@Brown Work Sample">
-                </div>
-            </a>
-            <br>
-            <a href="infodesign.html">
-                <div class="workcategory">
-                    <p class="rotate"> Data </p>
-                    <span class="worktitlespan">Information Design</span>
-                    <img class="worksample" id="datavis" src="images/panelsphilippines.png" alt="Philippines Data Visualizations">
-                </div>
-            </a>
-            <br>
-            <a href="criticalreview.html">
-            <div class="workcategory">
-                <p class="rotate"> The CR </p>
-                <span class="worktitlespan">The Critical Review</span>
-                <img class="worksample" id="critreview" src="images/CRmocks.png" alt="Philippines Data Visualizations">
-            </div>
-        </a>
-            <br>
-
-            <a href="hypr.html">
-                <div class="workcategory">
-                    <p class="rotate"> HYPR </p>
-                    <span class="worktitlespan">HYPR CORP</span>
-                    <img class="worksample" id="hypr" src="images/hyprsample.png" alt="Philippines Data Visualizations">
-                </div>
-            </a>
-            <br>
-
-            <div class="workcategory">
-                <p class="rotate"> Wocks </p>
-                <span class="worktitlespan">Jabberwocks</span>
-                <img class="worksample" id="wocks" src="images/wockssample.png" alt="Philippines Data Visualizations">
-            </div>
-
-
+    <div class="intro-splash">
+        <div class="col" id="big-text-container">
+            <p class="big-text"> Mark is a designer currently studying Computer Science at <a href="https://www.brown.edu/"><span id="brown-span">Brown University.</span></a> Most recently, he designed for Atlassian as an intern on the Confluence team.
+            </p>
         </div>
 
+        <div class="col" id="ovals-div">
+            <ul id="oval-ul">
+                <li>
+                    <div class="oval" onclick="document.body.style.backgroundColor = '#F5F5F5';" id="white-oval">
+                    </div>
+                </li>
+                <li>
+                    <div class="oval" id="blue-oval">
+                    </div>
+                </li>
+                <li>
+                    <div class="oval" id="yellow-oval">
+                    </div>
+                </li>
+                <li>
+                    <div class="oval" id="pink-oval">
+                    </div>
+                </li>
+                <li>
+                    <div class="oval" id="green-oval">
+                    </div>
+                </li>
+            </ul>
 
-        <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+        </div>
+    </div>
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+    <!-- /* //////////////////////////////// */ -->
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    <div id="allprojects">
+        <p id="work-header">Work</p>
+        <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
 
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+        <a class="div-link" href="atlassian.html">
+            <div class="project-container blueproj" id="atlassian-proj">
+                <h1 class="project-title blue">Atlassian</h1>
+                <p class="project-descrip blue">Designing Confluence's mobile page creation flow</p>
+            </div>
+        </a>
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        <a class="div-link" href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7">
+            <div class="project-container yellowproj" id="queer-proj">
+                <h1 class="project-title yellow">Map of Queer Learning Book</h1>
+                <p class="project-descrip yellow">A handprinted and bound book of crowdsourced stories with the aim of memorializing queer experiences</p>
+            </div>
+        </a>
+
+        <a class="div-link" href="criticalreview2.html">
+            <div class="project-container pinkproj" id="CR-proj">
+                <h1 class="project-title pink">Critical Review</h1>
+                <p class="project-descrip pink">Redesign and full-stack overhaul of Brown University's course review website, with interactive data visualizations and more.</p>
+            </div>
+        </a>
+
+        <a class="div-link" href="https://medium.com/hack-at-brown/designing-hack-brown-2019-e07f20a0e42d">
+            <div class="project-container greenproj" id="hack19-proj">
+                <h1 class="project-title green">Hack@Brown 2019</h1>
+                <p class="project-descrip green">Designing Brown University's Hackathon, a conference that draws over 500 students from all over the world to the Providence, RI campus.
+                </p>
+            </div>
+        </a>
+
+        <div class="project-container blackproj" id="lovetriangle-proj">
+            <h1 class="project-title black">Love Triangle Book</h1>
+            <p class="project-descrip black">Project documentation coming soon!</p>
+        </div>
+
+        <div class="project-container blueproj" id="countrydata-proj">
+            <h1 class="project-title blue">Philipinnes Data Visualization Book</h1>
+            <p class="project-descrip blue">Project documentation coming soon!</p>
+        </div>
+
+        <a class="div-link" href="oldindex.html">
+        <div class="project-container yellowproj" id="oldportolio-proj">
+            <h1 class="project-title yellow">Earlier Projects</h1>
+            <p class="project-descrip yellow">My former portfolio site, containing projects up to 2018.</p>
+        </div>
+    </a>
+    </div>
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+</script>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/landing.js"></script>
 </body>
 </html>

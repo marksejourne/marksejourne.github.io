@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'juni-boldcondensed';
+    src: url("fonts/junicode-boldcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular';
+    src: url("fonts/junicode-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-bold';
+    src: url("fonts/junicode-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular-condensed';
+    src: url("fonts/junicode-regularcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-italic-condensed';
+    src: url("fonts/junicode-italiccondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* TOP NAVIGATION MENU  */
+nav {
+    padding: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 80px;
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-bold';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    color: #fafafa;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.navtitle {
+    width: 200px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+
+/* //////////////////////////////// */
+
+body {
+    background-color: #4056AF;
+    color: #fafafa;
+}
+
+h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.project-title {
+    font-family: 'juni-regular-condensed';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 15px;
+    /* color: #323232; */
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#phone-div {
+    /* padding-right: 150px; */
+    text-align: right;
+    max-width: 40%
+}
+
+#brief-div {
+    padding-left: 50px;
+    margin-right: 70px;
+}
+
+#phone-pic {
+    max-width: 55%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+.col {
+    flex: 1;
+    /* border-style: solid; */
+}
+
+.lil-heading {
+    font-family: 'juni-bold';
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+.answers {
+    font-family: 'juni-regular';
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+/* marquee {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+} */
+
+.disclaimer-div {
+    width: 35%;
+    border: 1px solid #fafafa;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    /* padding: 30px; */
+}
+
+.disclaimer {
+    font-family: 'juni-regular';
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+margin: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family:'juni-regular-condensed';
+    margin-bottom: 0px;
+
+}
+
+.body-p {
+    font-family: 'juni-regular';
+    font-size: 20px;
+    margin-top: 0px;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
+
+.bodycontent-div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.confl-link {
+    color: #fafafa;
+}
+
+/* CONTACT MODAL STYLING */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    z-index: 100;
+
+}
+
+input {
+	display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 5px;
+    min-height: 20px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea {
+	display: block;
+    padding: 5px;
+    width: 90%;
+    min-height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea, select, input, button {
+    outline: none;
+    font-family: 'juni-regular';
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #323232;
+}
+
+button {
+    float: right;
+    margin-right: 10%;
+    background-color: #323232;
+    border-radius: 0;
+    border: none;
+    color: white;
+    padding: 10px;
+    min-width: 60px;
+    cursor: pointer;
+    /* padding-left, padding-right: 7px; */
+}
+
+/* Modal Content */
+.modal-content {
+float: right;
+    background-color: #fafafa;
+    border: 1px solid #323232;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    /* border-radius: 20px; */
+    width: 40%;
+    margin-right: 30px;
+}
+
+form {
+	margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+    color: #323232;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #E68599;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        /* max-width: 100%; */
+    }
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        max-width: 70%;
+    }
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+    #brief-div {
+        padding: 0px;
+    }
+    .disclaimer-div {
+        width: 55%;
+    }
+}
