@@ -42,7 +42,7 @@ html { font-family: 'Inter', sans-serif; }
 
 @font-face {
     font-family: 'blocus';
-    src: url("fonts/blocuswebfont.tff");
+    src: url("fonts/blocuswebfont.woff");
     font-weight: normal;
     font-style: normal;
 }
