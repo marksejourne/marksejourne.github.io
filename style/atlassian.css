@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'juni-regular';
-    src: url("fonts/junicode-regular-webfont.woff");
+    src: url("fonts/Folio-Light.woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -33,6 +33,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'folio-med';
+    src: url("fonts/folio.woff");
+    font-weight: Medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'folio';
+    src: url("fonts/Folio-Light.woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* TOP NAVIGATION MENU  */
 nav {
@@ -93,6 +106,38 @@ h1 {
     font-size: 30px;
 }
 
+h4 {
+    font-family: 'folio-med';
+    font-size: 20px;
+    font-weight: Medium;
+    color: #fafafa;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+
+h5 {
+    font-family: 'folio-med', sans-serif;
+    font-size: 22px;
+    color: #fafafa;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'folio-med';
+    font-size: 20px;
+    color: #fafafa;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 .project-title {
     font-family: 'juni-regular-condensed';
     font-style: normal;
@@ -117,8 +162,8 @@ h1 {
 }
 
 #brief-div {
-    padding-left: 50px;
-    margin-right: 70px;
+    margin-left: 90px;
+    margin-top: -30px;
 }
 
 #phone-pic {
@@ -132,15 +177,44 @@ h1 {
     /* border-style: solid; */
 }
 
+#persona-div {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    display: flex;
+    border: 1px solid #fafafa;
+    padding: 30px;
+}
+
+#priorities-table {
+    width: 120%;
+    text-align: center;
+    margin-left: -10%;
+    margin-top: -30px;
+}
+
+.meeple {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.col3 {
+    flex: 1;
+    /* border-style: solid; */
+}
+
 .lil-heading {
     font-family: 'juni-bold';
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 0px;
 }
 
 .answers {
-    font-family: 'juni-regular';
-    font-size: 20px;
+    font-family: 'folio';
+    font-size: 18px;
     margin-top: 0px;
     line-height: 20px;
 }
@@ -162,36 +236,69 @@ h1 {
 }
 
 .disclaimer {
-    font-family: 'juni-regular';
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-margin: 40px;
+    font-family: 'folio', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: auto;
+    margin: 40px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-family:'juni-regular-condensed';
-    margin-bottom: 0px;
-
+    margin-bottom: -10px;
+    margin-top: 40px;
 }
 
 .body-p {
-    font-family: 'juni-regular';
-    font-size: 20px;
-    margin-top: 0px;
-    line-height: 21px;
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: -0.0025em;
+    color: #fafafa;
     margin-bottom: 50px;
 }
 
+.specifics {
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: -0.0025em;
+    color: #fafafa;
+    margin-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pers-p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.questions {
+    width: 80%;
+    font-family: 'folio', sans-serif;
+    font-size: 18px;
+}
+
 .bodycontent-div {
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
 }
 
 .confl-link {
     color: #fafafa;
+}
+
+#journeys-pic {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
 }
 
 /* CONTACT MODAL STYLING */
@@ -300,6 +407,11 @@ a {
         width: 80%;
     }
 
+    #persona-div {
+        flex-direction: column;
+        width: 80%;
+    }
+
     #phone-pic {
         width: 100%;
     }
@@ -337,5 +449,21 @@ a {
     }
     .disclaimer-div {
         width: 55%;
+    }
+    nav {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .navtitle {
+        width: auto;
+    }
+    nav {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    nav .nav {
+        padding: 0px;
     }
 }

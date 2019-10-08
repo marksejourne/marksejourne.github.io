@@ -22,7 +22,7 @@
             <div class="nav-right">
                 <ul>
                     <li><a class="menulink"id="myBtn">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -70,73 +70,363 @@
             below. Please reach out via my Contact page
             if you’d like to hear more about my work on
             the Confluence app.</p>
-    </div>
+        </div>
 
-    <div class="bodycontent-div">
-        <h2>Context</h2>
-        <p class="body-p">Confluence is a content collaboration tool used to help teams
-            collaborate and share knowledge efficiently. You can read more
-            about the product’s specific capabilities and features
-            <a class="confl-link" href="https://www.atlassian.com/software/confluence?=undefined&aceid=&adposition=1t1&adgroup=56762718378&campaign=1398156449&creative=377209412295&device=c&keyword=confluence&matchtype=e&network=g&placement=&ds_kids=p32969177752&ds_e=GOOGLE&ds_eid=700000001542923&ds_e1=GOOGLE&gclid=EAIaIQobChMI5IG_rqvP5AIV0cDICh2sJQJaEAAYASAAEgJUrvD_BwE&gclsrc=aw.ds">here.</a> </p>
+        <div class="bodycontent-div">
+            <h2>Context</h2>
+            <p class="body-p">Confluence is a content collaboration tool used to help teams
+                collaborate and share knowledge efficiently. You can read more
+                about the product’s specific capabilities and features
+                <a class="confl-link" href="https://www.atlassian.com/software/confluence?=undefined&aceid=&adposition=1t1&adgroup=56762718378&campaign=1398156449&creative=377209412295&device=c&keyword=confluence&matchtype=e&network=g&placement=&ds_kids=p32969177752&ds_e=GOOGLE&ds_eid=700000001542923&ds_e1=GOOGLE&gclid=EAIaIQobChMI5IG_rqvP5AIV0cDICh2sJQJaEAAYASAAEgJUrvD_BwE&gclsrc=aw.ds">here.</a>
+                <br><br>
+                I was asked to focus on Confluence's mobile experience, a part of
+                the product which had not yet received much design attention.
+                I was given a lot of freedom to define my project's problem space
+                more specifically. My process is delineated below.</p>
 
-        <h2>Process Overview</h2>
-        <p class="body-p">I was asked to focus on the Confluence mobile experience. My process
-            began with a comprehensive evaluation of the app’s functionality
-            across platforms and devices. I then dug into research/metrics in
-            order to develop personas, map their most common journeys, identify
-            pain points, and ideate solutions. I worked with mobile developers
-            to weigh anticipated impacts of each solution against the cost to
-            implement it, and prioritized my list of problems/solutions.
-            <br> <br>
-            Upon identifying the problem I would be designing for, I conducted
-            a competitive analysis of how other products handle similar user needs.
-            I began ideating, sketching, mocking up, prototyping, and iterating.
-            Along the way, I worked to prioritize accessibility best practices,
-            I restructured information, collaborated with copywriters, altered
-            visuals, designed new icons when necessary, and checked in regularly
-            with the Atlassian Design Guidelines Team to be sure my work was ADG
-            compliant.</p>
+                <h2>Process Overview</h2>
+                <p class="body-p">My process began with a comprehensive evaluation of the app’s functionality
+                    across platforms and devices. I then dug into research/metrics in
+                    order to develop personas, map their most common journeys, identify
+                    pain points, and ideate solutions. I worked with mobile developers
+                    to weigh anticipated impacts of each solution against the cost to
+                    implement it, and prioritized my list of problems/solutions.
+                    <br> <br>
+                    Upon identifying the problem I would be designing for, I conducted
+                    a competitive analysis of how other products handle similar user needs.
+                    I began ideating, sketching, mocking up, prototyping, and iterating.
+                    Along the way, I worked to prioritize accessibility best practices,
+                    I restructured information, collaborated with copywriters, altered
+                    visuals, designed new icons when necessary, and checked in regularly
+                    with the Atlassian Design Guidelines Team to be sure my work was ADG
+                    compliant.</p>
 
-        <h2>Result</h2>
-        <p class="body-p">I ended up creating a feature that I’m super excited to see roll out
-            in the coming months. It capitalizes on mobile capabilities in order
-            to reduce user anxiety related to on-the-go page creation. It
-            challenges desktop-first mental models and truly takes mobile users’
-            needs into account.
-            <br><br>
-            Again, I would be happy to speak further about this project privately.
-            Please reach out via my Contact page above. </p>
-    </div>
+                    <h2>Audit & Preliminary Research</h2>
+                    <p class="body-p">I first needed to familiarize myself with the
+                        product -- learn its capabilities and use cases, understand its
+                        structure, etc. So, I began my process with a comprehensive
+                        audit of the current mobile app: documenting all screens,
+                        functionality, bugs, and taking particular note of where
+                        microinteractions and animations could be added in order to
+                        inject user delight at a low cost. I repeated the audit across
+                        platforms and devices, then compiled my findings and shared
+                        them with the Confluence team.
+                        <br><br>
+                        I also sat down with user researchers and dug into metrics and
+                        qualitative findings on the ways in which users interact with
+                        the mobile app vs. the desktop product.
+                    </p>
+
+                    <h2>Personas</h2>
+                    <p class="body-p">With a list of users’ top tasks and motivations on
+                        Confluence mobile, I developed three personas (theoretical users
+                        meant to represent the needs, actions, and reactions of a larger
+                        group of users):
+                    </p>
+                </div>
+
+                    <div id="persona-div">
+                        <div class="col3">
+                            <img src="images/atlassian/alana.png" id="alana-pic" class="meeple" alt="">
+                            <h5>Alana</h5>
+                            <p class="specifics">Alana is great at motivating a team
+                                along when times get tough. She constantly drives
+                                for outcomes and feels that details get in the
+                                way when she’s busy, (which, if you’ve had a
+                                meeting with her, you’d realize is almost always).
+                                She abhors admin work or things that get in her way.
+                                In her workplace, she prefers direct communication
+                                from her colleagues and managers.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Goals</h4>
+                            <p class="specifics">To get her team to work
+                                more efficiently, with less administration waste.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Motivations</h4>
+                            <p class="specifics">
+                                Recognition – wants superiors to see her as doing a great job.
+                                <br><br>
+                                Completion – wants to see all issues resolved and
+                                all boxes ticked. Incompleteness makes her anxious.
+                                <br><br>
+                                Efficiency – wants to make sure she and her team
+                                aren't spending too much time and energy on the
+                                wrong things.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Alana is a Ringleader.</h4>
+                            <p class="specifics">
+                                Ringleaders motivate others, turn ideas into
+                                action, attract the right attention and the
+                                right people to a team to get the job done.
+                                <br><br>
+                                They organize the spaces that people need to do
+                                their work, including projects, tickets and so on.
+                            </p>
+
+                            <hr>
+
+                            <h4>Questions Ringleaders ask:</h4>
+                            <p class="specifics">
+                                <ul>
+                                    <li class="questions">Can I understand how the show is going?</li>
+                                    <li class="questions">Are there any fires I need to put out?</li>
+                                    <li class="questions">Does everyone have everything they need?</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="col3">
+                            <img src="images/atlassian/jose.png" id="jose-pic" class="meeple" alt="">
+                            <h5>José</h5>
+                            <p class="specifics">Jose is diligent, collaborative,
+                                trusting, a good listener and a good friend.
+                                Jose gains great satisfaction from helping his
+                                team and/ or customers. He doesn’t mind putting
+                                in the hours, and he tends to put people in touch
+                                with each other if he thinks they’ll both benefit.
+                                He tries to make everyone happy, even if he doesn’t
+                                get what he wants, and he’s comfortable with
+                                following an endorsed process.
+                                <br><br>
+                                Jose can be a bit hesitant, and if he thinks
+                                something can be done better, he’d rather check
+                                with everyone first before diving in himself to
+                                change it. Not many people know this, but he plays
+                                guitar in a cover band, and loves Moroccan food.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Goals</h4>
+                            <p class="specifics">To make sure everyone’s
+                                getting along, and getting what they need.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Motivations</h4>
+                            <p class="specifics">
+                                Appreciation – his own self-esteem is propped up
+                                by others appreciating him.
+                                <br><br>
+                                Understanding and acceptance – he's strongly
+                                motivated to empathize with and understand others,
+                                and appreciates it when people want to understand
+                                him.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Jose is a Connector.</h4>
+                            <p class="specifics">
+                                Connectors tend to see relationships and patterns
+                                before others do. They’re broad consumers of
+                                information and stay up to date on what everyone
+                                is doing. The Connector enjoys helping like-minded
+                                people and projects get in touch.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Questions Connectors ask:</h4>
+                            <p class="specifics">
+                                <ul>
+                                    <li class="questions">Who else is using - or could use - this right now?</li>
+                                    <li class="questions">What’s the social history of what I’m looking at?</li>
+                                    <li class="questions">Can you help me get someone excited about this?</li>
+                                </ul>
+                            </p>
+
+                        </div>
+
+                        <div class="col3">
+                            <img src="images/atlassian/mia.png" id="mia-pic" class="meeple" alt="">
+                            <h5>Mia</h5>
+                            <p class="specifics">Mia is definitely a proponent
+                                of ‘just enough’ when it comes to work. It’s not
+                                that she does a bad job (she’s good at what she
+                                does), she just doesn’t see the need to go the
+                                extra mile. She’d much rather put her energies
+                                into her life outside of work.
+                                <br><br>
+                                Mia uses existing pages, templates and frameworks,
+                                and relies on existing ways of doing things. If
+                                she has to take on responsibility, she’d much
+                                prefer it to be more operational than strategic.
+                                <br><br>
+                                She has no intention of being a power user, or
+                                even pretending to look like one.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Goals</h4>
+                            <p class="specifics">To not screw up. To tick
+                                the boxes of what she’s required to do, so that
+                                she can focus attention elsewhere.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Motivations</h4>
+                            <p class="specifics">
+                                Recognition – wants superiors to see her as doing a great job.
+                                <br><br>
+                                Completion – wants to see all issues resolved and
+                                all boxes ticked. Incompleteness makes her anxious.
+                                <br><br>
+                                Efficiency – wants to make sure she and her team
+                                aren't spending too much time and energy on the
+                                wrong things.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Mia is a Passenger</h4>
+                            <p class="specifics">
+                                Passengers follow the herd. They aren’t
+                                necessarily lazy, they just aren’t motivated to
+                                break new ground or spend time exploring when
+                                they can get stuff accomplished and clock out at
+                                5. Passengers abhor change and disruption.
+                            </p>
+
+                            <hr>
+
+                            <h4 class="h4s">Questions Passengers ask:</h4>
+                            <p class="specifics">
+                                <ul>
+                                    <li class="questions">Are you making it easy for me to take action?</li>
+                                    <li class="questions">How are my teammates using this?</li>
+                                    <li class="questions">Are you changing the way I work?</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                <div class="bodycontent-div">
+                    <h2>Journey Mapping</h2>
+                    <p class="body-p">
+                        Based on the personas developed above, and the top task
+                        findings from the research team, I mapped out probable
+                        user journeys. This was far more an exercise in user
+                        empathy than in analytics.
+                        <br><br>
+                        I used blue stickies to represent each step of the
+                        current journey, pink stickies to record sentiments
+                        along the way and to identify pain points, and yellow
+                        stickies for potential solutions and alterations to the
+                        interface. Underneath the sticky note mappings, I roughly
+                        charted the personas sentiments over the course of the
+                        journey.
+                        </p>
+                        <img src="images/atlassian/journeymapping.png" id="journeys-pic" alt="Images of sticky notes on whiteboard, showing journey mapping process">
+                        <p class="body-p">
+                            This exercise really helped me to
+                            accelerate the process of identifying major user
+                            pain points within the mobile experience, and to
+                            better understand the needs and motivations of
+                            users.
+                        </p>
+
+                        <h2>Ongoing research & Competitive Analysis</h2>
+                        <p class="body-p">
+                            As I entered the solution-ideation
+                            phase of my process, I spent some time reviewing
+                            the parameters I would have to account for, like
+                            design guidelines (Material Design, Human Interface
+                            Guidelines, and Atlassian’s own design language -- ADG)
+                            and accessibility best practices (Web Content Accessibility
+                            Guidelines). I also began to pay closer attention to
+                            the apps I use the most, why I use them, and at which
+                            moments I find myself the most ‘delighted’ by them.
+                        </p>
+
+                        <h2>Solution Ideation & Prioritization</h2>
+                        <p class="body-p">
+                            I built a table like the one below to use for
+                            solution ideation and impact evaluation (columns 1-4).
+                            I then handed it off to an Android and an iOS
+                            engineer to fill out the last two columns with their
+                            predictions of how much effort each proposed solution
+                            would require on the development side.
+                        </p>
+                        <img src="images/atlassian/prioritization-table.png" id="priorities-table" alt="">
+                        <p class="body-p">
+                            With the table all filled out, I sat down with my
+                            team triad (product manager, designer, and head
+                            engineer) to discuss which of my target problems/
+                            potential solutions struck the best balance between
+                            maximizing impact while minimizing effort and cost.
+                        </p>
+
+                        <h2>Iterative Design</h2>
+                        <p class="body-p">
+                            With a clearly defined problem space and a boatload
+                            of ideas for how to address it, I jumped into
+                            sketching possible new user flows, interfaces,
+                            shortcuts, etc. Based on these early sketches, I
+                            crafted rough mockups and ‘sparred’ them with the
+                            design team to get feedback.
+                            <br><br>
+                            This kicked off the process of designing, soliciting
+                            feedback via testing and critiques, redesigning, and
+                            so on and so forth until I landed on my finalized
+                            concept and design.
+                        </p>
 
 
-    <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    </script>
+                    <h2>Result</h2>
+                    <p class="body-p">I ended up creating a feature that I’m
+                        super excited to see roll out in the coming months.
+                        It capitalizes on mobile capabilities in order to
+                        reduce user anxiety related to on-the-go page creation.
+                        It challenges desktop-first mental models and truly
+                        takes mobile users’ needs into account.
+                        <br><br>
+                        I would be happy to speak further about this project
+                        privately. Please reach out via my ‘Contact’ page above.
+                        </p>
+                    </div>
 
 
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
 
-    </body>
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    </script>
+
+
+
+                </body>

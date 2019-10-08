@@ -14,7 +14,7 @@ html { font-family: 'Inter', sans-serif; }
 
 @font-face {
     font-family: 'juni-regular';
-    src: url("fonts/junicode-regular-webfont.woff");
+    src: url("fonts/folio.woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -50,8 +50,6 @@ html { font-family: 'Inter', sans-serif; }
 
 /* TYPE HIERARCHY */
 h1 {
-    /* font-family: benton-sans, sans-serif; */
-    /* font-family: 'Inter var', sans-serif; */
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
@@ -266,11 +264,10 @@ nav a {
 
 .project-descrip {
     font-family: 'juni-regular';
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 70px;
-    margin-top: -15px;
+    margin-top: 0px;
     width: 50%;
-    /* color: #323232; */
 }
 
 /* .GeneratedMarquee { */
@@ -453,8 +450,11 @@ a {
     nav {
         padding-left: 0px;
         padding-right: 0px;
-
         padding-bottom: 20px;
+    }
+
+    #work-header {
+        margin-left: -5%;
     }
 
     .oval {
@@ -464,35 +464,35 @@ a {
     }
     #white-oval {
         width: 90%;
-        height: 30px;
+        height: 20px;
         margin: 0 auto;
         margin-bottom: 10px;
 
     }
     #blue-oval {
         width: 90%;
-        height: 30px;
+        height: 20px;
         margin: 0 auto;
         margin-bottom: 10px;
 
     }
     #yellow-oval {
         width: 90%;
-        height: 30px;
+        height: 20px;
         margin: 0 auto;
         margin-bottom: 10px;
 
     }
     #pink-oval {
         width: 90%;
-        height: 30px;
+        height: 20px;
         margin: 0 auto;
         margin-bottom: 10px;
 
     }
     #green-oval {
         width: 90%;
-        height: 30px;
+        height: 20px;
         margin: 0 auto;
         margin-bottom: 10px;
 
