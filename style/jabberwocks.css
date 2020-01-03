@@ -214,7 +214,7 @@ h2 {
 }
 
 .flex-container {
-	width: 70%;
+	width: 90%;
     margin: 0 auto;
 }
 
@@ -226,7 +226,7 @@ h2 {
 
 .flex-container ul li {
   list-style: none;
-  flex: 0 0 50%;
+  flex: 0 0 33.333333%;
 }
 
 
