@@ -410,6 +410,13 @@ a {
         width: 80%;
     }
 
+    .flex-container ul li {
+      list-style: none;
+      flex: 0 49%;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
     #persona-div {
         flex-direction: column;
         width: 80%;
