@@ -402,3 +402,79 @@ form {
 a {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #persona-div {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        /* max-width: 100%; */
+    }
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+    .disclaimer-div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .wide-container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        max-width: 70%;
+    }
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+    #brief-div {
+        padding: 0px;
+    }
+    .disclaimer-div {
+        width: 80%;
+    }
+    nav {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .navtitle {
+        width: auto;
+    }
+    nav {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    nav .nav {
+        padding: 0px;
+    }
+}
