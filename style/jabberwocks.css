@@ -95,14 +95,15 @@ nav a {
 
 html {
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body {
     background-color: #323232;
     color: #fafafa;
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 h1 {
@@ -156,6 +157,13 @@ hr {
 
 .container {
     width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.wide-container {
+    width: 90%;
     display: flex;
     margin: 0 auto;
     margin-top: 70px;
@@ -265,6 +273,15 @@ h2 {
     width: 87%;
 }
 
+.border-pic {
+    width: 87%;
+    border: 3px solid #FAFAFA;
+}
+
+#animations-descrip.body-text {
+    margin-bottom: -50px;
+}
+
 .col {
     flex: 1;
     text-align: center;
@@ -274,6 +291,14 @@ h2 {
     margin-bottom: -60px;
 }
 
+#concert-descrip {
+    width: 60%;
+}
+
+.full-pic {
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 
