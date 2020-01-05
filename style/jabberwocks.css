@@ -90,6 +90,9 @@ nav {
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav a {
@@ -448,6 +451,17 @@ a {
         flex: 0 49%;
         flex-direction: column;
         margin: 0 auto;
+    }
+
+    .navtitle {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .nav-left {
+        /* padding-left: 0px; */
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     #persona-div {
