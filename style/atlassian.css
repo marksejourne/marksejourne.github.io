@@ -407,6 +407,11 @@ a {
         width: 80%;
     }
 
+    .bodycontent-div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     #persona-div {
         flex-direction: column;
         width: 80%;
@@ -430,6 +435,11 @@ a {
     .container {
         flex-direction: column;
         width: 80%;
+    }
+
+    .bodycontent-div {
+        width: 80%;
+        margin: 0 auto;
     }
 
     #phone-pic {
