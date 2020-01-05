@@ -11,179 +11,225 @@
 </head>
 
 <body>
-    <!-- TOP NAVIGATION -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-left">
-                <ul>
-                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a class="menulink"id="myBtn">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <!-- <svg id="fader"></svg>
+    <script>
+    fadeInPage();
+    function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+    }
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!window.AnimationEvent) { return; }
+            var anchors = document.getElementsByTagName('a');
 
-    <!-- CONTACT POPUP -->
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
-                <input type="email" name="email" placeholder="Your email">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+               for (var idx=0; idx<anchors.length; idx+=1) {
+                   if (anchors[idx].hostname !== window.location.hostname ||
+               anchors[idx].pathname === window.location.pathname) {
+               continue;
+           }
+           anchors[idx].addEventListener('click', function(event) {
+              var fader = document.getElementById('fader'),
+                  anchor = event.currentTarget;
+
+              var listener = function() {
+                  window.location = anchor.href;
+                  fader.removeEventListener('animationend', listener);
+              };
+              fader.addEventListener('animationend', listener);
+
+              event.preventDefault();
+              fader.classList.add('fade-in');
+           });
+       }
+    });
+    window.addEventListener('pageshow', function (event) {
+      if (!event.persisted) {
+        return;
+      }
+      var fader = document.getElementById('fader');
+      fader.classList.remove('fade-in');
+    });
+
+</script> -->
+
+
+
+
+
+<!-- TOP NAVIGATION -->
+<header class="header">
+    <nav class="nav">
+        <div class="nav-left">
+            <ul>
+                <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
+            </ul>
         </div>
+        <div class="nav-right">
+            <ul>
+                <li><a class="menulink"id="myBtn">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- CONTACT POPUP -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+
+<h1 class="project-title blue">The Jabberwocks</h1>
+
+<div class="disclaimer-div">
+    <p class="disclaimer">The Jabberwocks are Brown University’s original a
+        cappella group, established in 1949. As The Jabberwocks’ designer
+        and brand manager for two years, I  faced two main challenges:</p>
+
+        <ul id="disclaim-ul">
+            <li class="disclaim-li">Updating the group’s visual identity to ensure continued relevance.</li>
+            <li class="disclaim-li">Managing the group’s brand through a particularly complex transition, from an all-male group to an all-gender one.</li>
+        </ul>
+
+        <p class="disclaimer">Collateral: album artwork, posters, online publicity campaigns, photography, motion graphics, books, physical artifacts, more.</p>
     </div>
 
-
-    <h1 class="project-title blue">The Jabberwocks</h1>
-
-    <div class="disclaimer-div">
-        <p class="disclaimer">The Jabberwocks are Brown University’s original a
-            cappella group, established in 1949. As The Jabberwocks’ designer
-            and brand manager for two years, I  faced two main challenges:</p>
-
-            <ul id="disclaim-ul">
-                <li class="disclaim-li">Updating the group’s visual identity to ensure continued relevance.</li>
-                <li class="disclaim-li">Managing the group’s brand through a particularly complex transition, from an all-male group to an all-gender one.</li>
-            </ul>
-
-            <p class="disclaimer">Collateral: album artwork, posters, online publicity campaigns, photography, motion graphics, books, physical artifacts, more.</p>
-        </div>
-
-        <div class="flex-container">
-            <h2>Album Design</h2>
-            <p id="countdown-descrip"class="body-text">Graphics designed and posted on social media platforms to count down days until the album release.</p>
-            <ul>
-                <li>
-                    <div class="shrinker">
+    <div class="flex-container">
+        <h2>Album Design</h2>
+        <p id="countdown-descrip"class="body-text">Graphics designed and posted on social media platforms to count down days until the album release.</p>
+        <ul>
+            <li>
+                <div class="shrinker">
                     <div style="max-width: 100vh;"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 100%;"><iframe src="//cdn.iframe.ly/EmmWNoJ?media=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen allow="encrypted-media *"></iframe></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
                 </div>
             </li>
 
-                <li>
-                    <div class="shrinker">
-                        <img src="images/jabberwocks/4days.png" class="insta-pic" alt="">
-                    </div>
-                </li>
+            <li>
+                <div class="shrinker">
+                    <img src="images/jabberwocks/4days.png" class="insta-pic" alt="">
+                </div>
+            </li>
 
 
-                <li>
-                    <div class="shrinker">
-                        <img src="images/jabberwocks/3days.png" class="insta-pic" alt="">
-                    </div>
-                </li>
+            <li>
+                <div class="shrinker">
+                    <img src="images/jabberwocks/3days.png" class="insta-pic" alt="">
+                </div>
+            </li>
 
 
-                <li>
-                    <div class="shrinker">
-                        <img src="images/jabberwocks/2days.png" class="insta-pic" alt="">
-                    </div>
-                </li>
+            <li>
+                <div class="shrinker">
+                    <img src="images/jabberwocks/2days.png" class="insta-pic" alt="">
+                </div>
+            </li>
 
 
-                <li>
-                    <div class="shrinker">
-                        <div style="max-width: 100vh;"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 100%;"><iframe src="//cdn.iframe.ly/OYMNbPD?media=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen allow="encrypted-media *"></iframe></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-                    </div>
-                </li>
+            <li>
+                <div class="shrinker">
+                    <div style="max-width: 100vh;"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 100%;"><iframe src="//cdn.iframe.ly/OYMNbPD?media=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen allow="encrypted-media *"></iframe></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+                </div>
+            </li>
 
-                <li>
-                    <div class="shrinker">
-                        <img src="images/jabberwocks/roommates_artwork.jpg" class="insta-pic" alt="">
-                    </div>
-                </li>
-            </ul>
+            <li>
+                <div class="shrinker">
+                    <img src="images/jabberwocks/roommates_artwork.jpg" class="insta-pic" alt="">
+                </div>
+            </li>
+        </ul>
 
-            <br>
-            <br>
-            <p id="cd-descrip" class="body-text">Cover Artwork for 'Roommates' album, released December 2019.</p>
-            <br>
-            <img src="images/jabberwocks/roommates-cd.png" id="cd-pic" alt="">
-        </div>
+        <br>
+        <br>
+        <p id="cd-descrip" class="body-text">Cover Artwork for 'Roommates' album, released December 2019.</p>
+        <br>
+        <img src="images/jabberwocks/roommates-cd.png" id="cd-pic" alt="">
+    </div>
 
-        <div id="descrip-container" class="flex-container">
+    <div id="descrip-container" class="flex-container">
         <p id="cd-descrip" class="body-text">Cover Artwork (Singles)</p>
     </div>
 
-        <div class="container">
-            <div class="col">
-                <img src="images/jabberwocks/climax1.jpg" id="top1" class="lil-pic" alt="">
-            </div>
-            <div class="col">
-                <img src="images/jabberwocks/climax2.png" id="bottom1" class="lil-pic" alt="">
-            </div>
+    <div class="container">
+        <div class="col">
+            <img src="images/jabberwocks/climax1.jpg" id="top1" class="lil-pic" alt="">
         </div>
-
-        <div class="flex-container">
-            <h2>Concert Publicity</h2>
-            <p id="concert-descrip"class="body-text">A selection of concert posters printed and hung across campus and throughout the city of Providence to publicize Jabberwocks concerts and other events.</p>
+        <div class="col">
+            <img src="images/jabberwocks/climax2.png" id="bottom1" class="lil-pic" alt="">
         </div>
-        <img src="images/jabberwocks/posters-mock.jpeg" class="full-pic" alt="">
+    </div>
 
-        <div class="wide-container">
-            <div class="col">
-                <img src="images/jabberwocks/famweekend-crop-mockup.jpeg" id="top" class="border-pic" alt="">
-            </div>
-            <div class="col">
-                <img src="images/jabberwocks/afterdark-poster-crop.jpeg" id="bottom" class="border-pic" alt="">
-            </div>
+    <div class="flex-container">
+        <h2>Concert Publicity</h2>
+        <p id="concert-descrip"class="body-text">A selection of concert posters printed and hung across campus and throughout the city of Providence to publicize Jabberwocks concerts and other events.</p>
+    </div>
+    <img src="images/jabberwocks/posters-mock.jpeg" class="full-pic" alt="">
+
+    <div class="wide-container">
+        <div class="col">
+            <img src="images/jabberwocks/famweekend-crop-mockup.jpeg" id="top" class="border-pic" alt="">
         </div>
-
-        <div class="flex-container">
-            <br><br><br>
-            <p id="animations-descrip" class="body-text">Poster animations, to be shared by members, friends, and fans of the group as stories on Instagram, Snapchat, and Facebook.</p>
+        <div class="col">
+            <img src="images/jabberwocks/afterdark-poster-crop.jpeg" id="bottom" class="border-pic" alt="">
         </div>
+    </div>
 
-        <div class="container">
-            <div class="col">
-                <img src="images/jabberwocks/parentsgif.gif" class="lil-pic" alt="">
-            </div>
-            <div class="col">
-                <img src="images/jabberwocks/afterdarkgif.gif" id="bottom2"class="lil-pic" alt="">
-            </div>
+    <div class="flex-container">
+        <br><br><br>
+        <p id="animations-descrip" class="body-text">Poster animations, to be shared by members, friends, and fans of the group as stories on Instagram, Snapchat, and Facebook.</p>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <img src="images/jabberwocks/parentsgif.gif" class="lil-pic" alt="">
         </div>
-
-        <div class="flex-container">
-            <br><br><br><br>
-            <p id="concert-descrip"class="body-text">A selection of graphic banners designed for Facebook events and online sharing. These pages serve as The Jabberwocks’ primary medium for directly inviting audience members and processing RSVPs.</p>
+        <div class="col">
+            <img src="images/jabberwocks/afterdarkgif.gif" id="bottom2"class="lil-pic" alt="">
         </div>
-        <img src="images/jabberwocks/facebook-covers.jpeg" class="full-pic" alt="">
+    </div>
 
-        <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
+    <div class="flex-container">
+        <br><br><br><br>
+        <p id="concert-descrip"class="body-text">A selection of graphic banners designed for Facebook events and online sharing. These pages serve as The Jabberwocks’ primary medium for directly inviting audience members and processing RSVPs.</p>
+    </div>
+    <img src="images/jabberwocks/facebook-covers.jpeg" class="full-pic" alt="">
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+    </script>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-
-    </body>
-    </html>
+</body>
+</html>

@@ -48,6 +48,39 @@
     font-style: normal;
 }
 
+/* #fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: #323232;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+} */
+
 /* TOP NAVIGATION MENU  */
 nav {
     padding: 70px;
@@ -226,7 +259,7 @@ h2 {
 }
 
 .flex-container {
-	width: 75%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -242,17 +275,17 @@ h2 {
 }
 
 .flex-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin: 0 auto;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .flex-container ul li {
-  list-style: none;
-  flex: 0 0 33%;
-  margin: 0 auto;
+    list-style: none;
+    flex: 0 0 33%;
+    margin: 0 auto;
 }
 
 .shrinker {
@@ -324,7 +357,7 @@ h2 {
 }
 
 input {
-	display: block;
+    display: block;
     width: 90%;
     margin-bottom: 15px;
     padding: 5px;
@@ -335,7 +368,7 @@ input {
 }
 
 textarea {
-	display: block;
+    display: block;
     padding: 5px;
     width: 90%;
     min-height: 100px;
@@ -370,7 +403,7 @@ button {
 
 /* Modal Content */
 .modal-content {
-float: right;
+    float: right;
     background-color: #fafafa;
     border: 1px solid #323232;
     padding: 30px;
@@ -381,7 +414,7 @@ float: right;
 }
 
 form {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 /* The Close Button */
@@ -411,10 +444,10 @@ a {
     }
 
     .flex-container ul li {
-      list-style: none;
-      flex: 0 49%;
-      flex-direction: column;
-      margin: 0 auto;
+        list-style: none;
+        flex: 0 49%;
+        flex-direction: column;
+        margin: 0 auto;
     }
 
     #persona-div {
