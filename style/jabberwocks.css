@@ -430,6 +430,27 @@ a {
         width: 100%;
         /* max-width: 100%; */
     }
+
+    #top {
+        margin-top: -30px;
+    }
+
+    #bottom {
+        margin-top: 20px;
+    }
+
+    #bottom1 {
+        margin-top: 20px;
+    }
+
+    #bottom2 {
+        margin-top: 20px;
+    }
+
+    .lil-pic {
+        width: 95%;
+    }
+
     .col {
         width: 100%;
         max-width: 100%;
@@ -472,6 +493,27 @@ a {
     .disclaimer-div {
         width: 80%;
     }
+
+    #top {
+        margin-top: -30px;
+    }
+
+    #bottom {
+        margin-top: 20px;
+    }
+
+    #bottom1 {
+        margin-top: 20px;
+    }
+
+    #bottom2 {
+        margin-top: 20px;
+    }
+
+    .lil-pic {
+        width: 95%;
+    }
+
     nav {
         padding-left: 0px;
         padding-right: 0px;
