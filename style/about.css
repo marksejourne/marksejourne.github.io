@@ -89,6 +89,11 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    font-family: 'junicode-boldcondensed';
+    font-size: 30px;
+}
+
 h3 {
     font-family: 'juni-boldcondensed';
     font-size: 45px;
@@ -242,6 +247,7 @@ nav a {
     font-family: 'junicode-boldcondensed';
     font-size: 30px;
 }
+
 
 
 
