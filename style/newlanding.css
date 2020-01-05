@@ -47,7 +47,7 @@ html { font-family: 'Inter', sans-serif; }
     font-style: normal;
 }
 
-/* #fader {
+#fader {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@ html { font-family: 'Inter', sans-serif; }
     height: 100%;
     z-index: 999999;
     pointer-events: none;
-    background: #323232;
+    background: #fafafa;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
 }
@@ -78,7 +78,7 @@ html { font-family: 'Inter', sans-serif; }
 #fader.fade-in {
     opacity: 1;
     animation-name: fade-in;
-} */
+}
 
 
 /* TYPE HIERARCHY */

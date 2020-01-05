@@ -118,8 +118,13 @@
 </head>
 
 <body>
-    <!-- <svg id="fader"></svg>
+    <svg id="fader"></svg>
     <script>
+
+    function changeColor(newColor) {
+        var elem = document.getElementById('fader');
+        elem.style.background = newColor;
+    }
     fadeInPage();
     function fadeInPage() {
         if (!window.AnimationEvent) { return; }
@@ -128,7 +133,7 @@
     }
         document.addEventListener('DOMContentLoaded', function() {
             if (!window.AnimationEvent) { return; }
-            var anchors = document.getElementsByTagName('a');
+            var anchors = document.querySelectorAll('a:not(.menulink)');
 
                for (var idx=0; idx<anchors.length; idx+=1) {
                    if (anchors[idx].hostname !== window.location.hostname ||
@@ -158,7 +163,7 @@
       fader.classList.remove('fade-in');
     });
 
-    </script> -->
+    </script>
 
 
     <!-- TOP NAVIGATION -->
@@ -231,21 +236,21 @@
         <p id="work-header">Work</p>
         <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
 
-        <a class="div-link" href="atlassian.html">
+        <a class="div-link" href="atlassian.html" onclick="changeColor('#4056AF');">
             <div class="project-container blueproj" id="atlassian-proj">
                 <h1 class="project-title blue">Atlassian</h1>
                 <p class="project-descrip blue">Designing Confluence's mobile page creation flow</p>
             </div>
         </a>
 
-        <a class="div-link" href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7">
+        <a class="div-link" href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7" onclick="changeColor('#F9AE34');">
             <div class="project-container yellowproj" id="queer-proj">
                 <h1 class="project-title yellow">Map of Queer Learning Book</h1>
                 <p class="project-descrip yellow">A handprinted and bound book of crowdsourced stories with the aim of memorializing queer experiences</p>
             </div>
         </a>
 
-        <a class="div-link" href="https://medium.com/hack-at-brown/designing-hack-brown-2019-e07f20a0e42d">
+        <a class="div-link" href="https://medium.com/hack-at-brown/designing-hack-brown-2019-e07f20a0e42d" onclick="changeColor('#19706A');">
             <div class="project-container greenproj" id="hack19-proj">
                 <h1 class="project-title green">Hack@Brown 2019</h1>
                 <p class="project-descrip green">Designing Brown University's Hackathon, a conference that draws over 500 students from all over the world to the Providence, RI campus.
@@ -253,33 +258,31 @@
             </div>
         </a>
 
-        <a class="div-link" href="jabberwocks.html">
+        <a class="div-link" href="jabberwocks.html" onclick="changeColor('#323232');">
         <div class="project-container blackproj" id="jabberwocks-proj">
             <h1 class="project-title black">The Jabberwocks</h1>
             <p class="project-descrip black">Rebranding + designing Brown University's oldest a cappella group, est. 1949.</p>
         </div>
         </a>
 
-        <a class="div-link" href="criticalreview2.html">
+        <a class="div-link" href="criticalreview2.html" onclick="changeColor('#E68599');">
             <div class="project-container pinkproj" id="CR-proj">
                 <h1 class="project-title pink">Critical Review</h1>
                 <p class="project-descrip pink">Redesign and full-stack overhaul of Brown University's course review website, with interactive data visualizations and more.</p>
             </div>
         </a>
 
-
-
-        <div class="project-container blueproj" id="lovetriangle-proj">
+        <div class="project-container blueproj" id="lovetriangle-proj" onclick="changeColor('#4056AF');">
             <h1 class="project-title blue">Love Triangle Book</h1>
             <p class="project-descrip blue">Project documentation coming soon!</p>
         </div>
 
-        <div class="project-container yellowproj" id="countrydata-proj">
+        <div class="project-container yellowproj" id="countrydata-proj" onclick="changeColor('#19706A');">
             <h1 class="project-title yellow">Philipinnes Data Visualization Book</h1>
             <p class="project-descrip yellow">Project documentation coming soon!</p>
         </div>
 
-        <a class="div-link" href="oldindex.html">
+        <a class="div-link" href="oldindex.html" onclick="changeColor('#E68599');">
         <div class="project-container pinkproj" id="oldportolio-proj">
             <h1 class="project-title pink">Earlier Projects</h1>
             <p class="project-descrip pink">My former portfolio site, containing projects up to 2018.</p>

@@ -48,7 +48,7 @@
     font-style: normal;
 }
 
-/* #fader {
+#fader {
     position: fixed;
     top: 0;
     left: 0;
@@ -79,7 +79,7 @@
 #fader.fade-in {
     opacity: 1;
     animation-name: fade-in;
-} */
+}
 
 /* TOP NAVIGATION MENU  */
 nav {
