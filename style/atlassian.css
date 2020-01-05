@@ -456,9 +456,10 @@ a {
     }
     #brief-div {
         padding: 0px;
+        width: 80%;
     }
     .disclaimer-div {
-        width: 55%;
+        width: 80%;
     }
     nav {
         padding-left: 0px;
