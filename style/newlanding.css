@@ -219,7 +219,7 @@ nav a {
 }
 
 #blue-oval {
-    background: #4056AF;
+    background: #3D51A4;
 }
 
 #yellow-oval {
@@ -324,7 +324,7 @@ nav a {
 
 #atlassian-proj:hover {
     height: 100%;
-    background-color: #4056AF;
+    background-color: #3D51A4;
     color: #f3f3f3;
     cursor: pointer;
 }
@@ -355,7 +355,7 @@ nav a {
 }
 
 #lovetriangle-proj:hover {
-    background-color: #4056af;
+    background-color: #3D51A4;
     color: #fafafa;
     cursor: pointer;
 }

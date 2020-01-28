@@ -55,7 +55,7 @@
     height: 100%;
     z-index: 999999;
     pointer-events: none;
-    background: #4056AF;
+    background: #3D51A4;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
 }
@@ -129,7 +129,7 @@ nav a {
 /* //////////////////////////////// */
 
 body {
-    background-color: #4056AF;
+    background-color: #3D51A4;
     color: #fafafa;
 }
 
