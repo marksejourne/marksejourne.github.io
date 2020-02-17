@@ -11,9 +11,15 @@
     <link rel="stylesheet" type="text/css" href="style/newlanding.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
     <script>
     $(document).ready(function() {
         $("#white-oval").click(function() {
+            $(".butn").css("color", "#323232");
+            $(".butn.active").css("backgroundColor", "#323232");
+            $(".butn.active").css("color", "#fafafa");
+            $("#filterbutton").css("color", "#323232");
             $("body").css("backgroundColor", "#f5f5f5");
             $(".project-container").css("backgroundColor", "#f5f5f5");
             $("p").css("color", "#323232");
@@ -40,8 +46,15 @@
             $(".project-container").mouseover(function(){$(this).find(".black").css("color","#f5f5f5")});
             $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-year").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-categ").css("color", "#323232")});
+
         });
         $("#blue-oval").click(function() {
+            $(".butn").css("color", "#f5f5f5");
+            $(".butn.active").css("backgroundColor", "#f5f5f5");
+            $(".butn.active").css("color", "#323232");
+            $("#filterbutton").css("color", "#fafafa");
             $("body").css("backgroundColor", "#3D51A4");
             $(".project-container").css("backgroundColor", "#3D51A4");
             $("p").css("color", "#f5f5f5");
@@ -58,8 +71,14 @@
             $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#f5f5f5")});
             $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-year").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-categ").css("color", "#f5f5f5")});
         });
         $("#yellow-oval").click(function() {
+            $(".butn").css("color", "#323232");
+            $(".butn.active").css("backgroundColor", "#323232");
+            $(".butn.active").css("color", "#fafafa");
+            $("#filterbutton").css("color", "#323232");
             $("body").css("backgroundColor", "#F9AE34");
             $(".project-container").css("backgroundColor", "#F9AE34");
             $("p").css("color", "#323232");
@@ -76,8 +95,14 @@
             $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-year").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-categ").css("color", "#323232")});
         });
         $("#pink-oval").click(function() {
+            $(".butn").css("color", "#323232");
+            $(".butn.active").css("backgroundColor", "#323232");
+            $(".butn.active").css("color", "#fafafa");
+            $("#filterbutton").css("color", "#323232");
             $("body").css("backgroundColor", "#E68599");
             $(".project-container").css("backgroundColor", "#e68599");
             $("p").css("color", "#323232");
@@ -94,8 +119,14 @@
             $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-year").css("color", "#323232")});
+            $(".project-container").mouseout(function(){$(this).find(".project-categ").css("color", "#323232")});
         });
         $("#green-oval").click(function() {
+            $(".butn").css("color", "#fafafa");
+            $(".butn.active").css("backgroundColor", "#fafafa");
+            $(".butn.active").css("color", "#323232");
+            $("#filterbutton").css("color", "#fafafa");
             $("body").css("backgroundColor", "#19706A");
             $(".project-container").css("backgroundColor", "#19706a");
             $("p").css("color", "#f5f5f5");
@@ -112,6 +143,8 @@
             $(".project-container").mouseover(function(){$(this).find(".black").css("color","#323232")});
             $(".project-container").mouseout(function(){$(this).find(".project-title").css("color", "#f5f5f5")});
             $(".project-container").mouseout(function(){$(this).find(".project-descrip").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-year").css("color", "#f5f5f5")});
+            $(".project-container").mouseout(function(){$(this).find(".project-categ").css("color", "#f5f5f5")});
         });
     });
     </script>
@@ -131,192 +164,347 @@
         var fader = document.getElementById('fader');
         fader.classList.add('fade-out');
     }
-        document.addEventListener('DOMContentLoaded', function() {
-            if (!window.AnimationEvent) { return; }
-            var anchors = document.querySelectorAll('a:not(.menulink)');
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return; }
+        var anchors = document.querySelectorAll('a:not(.menulink)');
 
-               for (var idx=0; idx<anchors.length; idx+=1) {
-                   if (anchors[idx].hostname !== window.location.hostname ||
-               anchors[idx].pathname === window.location.pathname) {
-               continue;
-           }
-           anchors[idx].addEventListener('click', function(event) {
-              var fader = document.getElementById('fader'),
-                  anchor = event.currentTarget;
+        for (var idx=0; idx<anchors.length; idx+=1) {
+            if (anchors[idx].hostname !== window.location.hostname ||
+                anchors[idx].pathname === window.location.pathname) {
+                    continue;
+                }
+                anchors[idx].addEventListener('click', function(event) {
+                    var fader = document.getElementById('fader'),
+                    anchor = event.currentTarget;
 
-              var listener = function() {
-                  window.location = anchor.href;
-                  fader.removeEventListener('animationend', listener);
-              };
-              fader.addEventListener('animationend', listener);
+                    var listener = function() {
+                        window.location = anchor.href;
+                        fader.removeEventListener('animationend', listener);
+                    };
+                    fader.addEventListener('animationend', listener);
 
-              event.preventDefault();
-              fader.classList.add('fade-in');
-           });
-       }
-    });
-    window.addEventListener('pageshow', function (event) {
-      if (!event.persisted) {
-        return;
-      }
-      var fader = document.getElementById('fader');
-      fader.classList.remove('fade-in');
-    });
+                    event.preventDefault();
+                    fader.classList.add('fade-in');
+                });
+            }
+        });
+        window.addEventListener('pageshow', function (event) {
+            if (!event.persisted) {
+                return;
+            }
+            var fader = document.getElementById('fader');
+            fader.classList.remove('fade-in');
+        });
 
-    </script>
+        </script>
 
 
-    <!-- TOP NAVIGATION -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-left">
-                <ul>
-                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
-                </ul>
+        <!-- TOP NAVIGATION -->
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-left">
+                    <ul>
+                        <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a class="menulink"id="myBtn">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTACT POPUP -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                    <input type="email" name="email" placeholder="Your email">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button id="sendbutton"type="submit">Send</button>
+                </form>
             </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a class="menulink"id="myBtn">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- CONTACT POPUP -->
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
-                <input type="email" name="email" placeholder="Your email">
-                <textarea name="message" placeholder="Your message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="intro-splash">
-        <div class="col" id="big-text-container">
-            <p class="big-text"> Mark is a designer currently studying Computer Science at <a href="https://www.brown.edu/"><span id="brown-span">Brown University.</span></a> Most recently, he designed for Atlassian as an intern on the Confluence team.
-            </p>
         </div>
 
-        <div class="col" id="ovals-div">
-            <ul id="oval-ul">
-                <li>
-                    <div class="oval" onclick="document.body.style.backgroundColor = '#F5F5F5';" id="white-oval">
-                    </div>
-                </li>
-                <li>
-                    <div class="oval" id="blue-oval">
-                    </div>
-                </li>
-                <li>
-                    <div class="oval" id="yellow-oval">
-                    </div>
-                </li>
-                <li>
-                    <div class="oval" id="pink-oval">
-                    </div>
-                </li>
-                <li>
-                    <div class="oval" id="green-oval">
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-
-    <!-- /* //////////////////////////////// */ -->
-
-    <div id="allprojects">
-        <p id="work-header">Work</p>
-        <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
-
-        <a class="div-link" href="atlassian.html" onclick="changeColor('#3D51A4');">
-            <div class="project-container blueproj" id="atlassian-proj">
-                <h1 class="project-title blue">Atlassian</h1>
-                <p class="project-descrip blue">Designing Confluence's mobile page creation flow</p>
-            </div>
-        </a>
-
-        <a class="div-link" href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7" onclick="changeColor('#F9AE34');">
-            <div class="project-container yellowproj" id="queer-proj">
-                <h1 class="project-title yellow">Map of Queer Learning Book</h1>
-                <p class="project-descrip yellow">A handprinted and bound book of crowdsourced stories with the aim of memorializing queer experiences</p>
-            </div>
-        </a>
-
-        <a class="div-link" href="https://medium.com/hack-at-brown/designing-hack-brown-2019-e07f20a0e42d" onclick="changeColor('#19706A');">
-            <div class="project-container greenproj" id="hack19-proj">
-                <h1 class="project-title green">Hack@Brown 2019</h1>
-                <p class="project-descrip green">Designing Brown University's Hackathon, a conference that draws over 500 students from all over the world to the Providence, RI campus.
+        <div class="intro-splash">
+            <div class="col" id="big-text-container">
+                <p class="big-text"> Mark is a designer currently studying Computer Science at <span id="brown-span"> <a href="https://www.brown.edu/">Brown University.</a></span> Most recently, he designed for <span id="atlassian-span"><a href="https://www.atlassian.com/">Atlassian</a></span> as an intern on the Confluence team.
                 </p>
             </div>
-        </a>
 
-        <a class="div-link" href="jabberwocks.html" onclick="changeColor('#323232');">
-        <div class="project-container blackproj" id="jabberwocks-proj">
-            <h1 class="project-title black">The Jabberwocks</h1>
-            <p class="project-descrip black">Rebranding + designing Brown University's oldest a cappella group, est. 1949.</p>
-        </div>
-        </a>
+            <div class="col" id="ovals-div">
+                <ul id="oval-ul">
+                    <li>
+                        <div class="oval" onclick="document.body.style.backgroundColor = '#F5F5F5';" id="white-oval">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="oval" id="blue-oval">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="oval" id="yellow-oval">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="oval" id="pink-oval">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="oval" id="green-oval">
+                        </div>
+                    </li>
+                </ul>
 
-        <a class="div-link" href="criticalreview2.html" onclick="changeColor('#E68599');">
-            <div class="project-container pinkproj" id="CR-proj">
-                <h1 class="project-title pink">Critical Review</h1>
-                <p class="project-descrip pink">Redesign and full-stack overhaul of Brown University's course review website, with interactive data visualizations and more.</p>
             </div>
-        </a>
-
-        <div class="project-container blueproj" id="lovetriangle-proj" onclick="changeColor('#3D51A4');">
-            <h1 class="project-title blue">Love Triangle Book</h1>
-            <p class="project-descrip blue">Project documentation coming soon!</p>
         </div>
 
-        <div class="project-container yellowproj" id="countrydata-proj" onclick="changeColor('#19706A');">
-            <h1 class="project-title yellow">Philipinnes Data Visualization Book</h1>
-            <p class="project-descrip yellow">Project documentation coming soon!</p>
+        <!-- /* //////////////////////////////// */ -->
+
+        <div id="allprojects">
+            <p id="work-header">Work</p>
+            <div id="myBtnContainer">
+                <div class="btn-expand">
+                    <button id="filterbutton" data-text-swap="✕">Filter</button>
+
+                </div>
+                <div class="collapsible">
+                    <ul>
+                        <li><button class="butn active" onclick="filterSelection('all')">All</button></li>
+                        <li><button class="butn" onclick="filterSelection('ar')">A.R.</button></li>
+                        <li><button class="butn" onclick="filterSelection('branding')">Branding</button></li>
+                        <li><button class="butn" onclick="filterSelection('experiential')">Experiential</button></li>
+                        <li><button class="butn" onclick="filterSelection('graphic')">Graphic</button></li>
+                        <li><button class="butn" onclick="filterSelection('interaction')">Interaction</button></li>
+                        <li><button class="butn" onclick="filterSelection('print')">Print</button></li>
+                        <li><button class="butn" onclick="filterSelection('product')">Product</button></li>
+                        <li><button class="butn" onclick="filterSelection('datavis')">Data Visualization</button></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
+            <div class="filterDiv product interaction">
+                <a class="div-link" href="atlassian.html" onclick="changeColor('#3D51A4');">
+                    <div class="project-container blueproj" id="atlassian-proj">
+                        <div class="project-col">
+                            <h1 class="project-title blue">Atlassian</h1>
+                            <p class="project-descrip blue">Re-designing Confluence's mobile page creation experience.</p>
+                        </div>
+                        <div class="project-col-right">
+                            <h1 class="project-year blue">2019</h1>
+                            <p class="project-categ blue">Product, Interaction, Mobile</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="filterDiv experiential print ar">
+                <a class="div-link" href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7" onclick="changeColor('#F9AE34');">
+                    <div class="project-container yellowproj" id="queer-proj">
+                        <div class="project-col">
+                            <h1 class="project-title yellow">Map of Queer Learning</h1>
+                            <p class="project-descrip yellow">Augmented reality installations accompanying a handprinted and bound book of crowdsourced stories, memorializing queer experiences</p>
+                        </div>
+                        <div class="project-col-right">
+                            <h1 class="project-year yellow">2020</h1>
+                            <p class="project-categ yellow">Experiential, Print, Augmented Reality</p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="filterDiv branding graphic product experiential">
+                <a class="div-link" href="https://medium.com/hack-at-brown/designing-hack-brown-2019-e07f20a0e42d" onclick="changeColor('#19706A');">
+                    <div class="project-container greenproj" id="hack19-proj">
+                        <div class="project-col">
+                            <h1 class="project-title green">Hack@Brown</h1>
+                            <p class="project-descrip green">Designing Brown University's Hackathon, a conference that draws over 500 students from all over the world to the Providence, RI campus.
+                            </p>
+                        </div>
+
+                        <div class="project-col-right">
+                            <h1 class="project-year green">2019</h1>
+                            <p class="project-categ green">Branding, Graphic Design, Product, Experiential</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="filterDiv branding graphic print">
+                <a class="div-link" href="jabberwocks.html" onclick="changeColor('#323232');">
+                    <div class="project-container blackproj" id="jabberwocks-proj">
+                        <div class="project-col">
+                            <h1 class="project-title black">The Jabberwocks</h1>
+                            <p class="project-descrip black">Rebranding + designing Brown University's oldest a cappella group, est. 1949.</p>
+                        </div>
+                        <div class="project-col-right">
+                            <h1 class="project-year black">2019</h1>
+                            <p class="project-categ black">Graphic Design, Branding, Print</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="filterDiv product datavis graphic">
+                <a class="div-link" href="criticalreview2.html" onclick="changeColor('#E68599');">
+                    <div class="project-container pinkproj" id="CR-proj">
+                        <div class="project-col">
+                            <h1 class="project-title pink">Critical Review</h1>
+                            <p class="project-descrip pink">Redesign and full-stack overhaul of Brown University's course review website, with interactive data visualizations and more.</p>
+                        </div>
+                        <div class="project-col-right">
+                            <h1 class="project-year pink">2018</h1>
+                            <p class="project-categ pink">Product, Data Visualization, Graphic Design</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="filterDiv print graphic">
+                <div class="project-container blueproj" id="lovetriangle-proj" onclick="changeColor('#3D51A4');">
+                    <div class="project-col">
+                        <h1 class="project-title blue">Love Triangle Book</h1>
+                        <p class="project-descrip blue">Project documentation coming soon!</p>
+                    </div>
+                    <div class="project-col-right">
+                        <h1 class="project-year blue">2018</h1>
+                        <p class="project-categ blue">Graphic Design, Print</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv datavis graphic print">
+                <div class="project-container yellowproj" id="countrydata-proj" onclick="changeColor('#19706A');">
+                    <div class="project-col">
+                        <h1 class="project-title yellow">Infographic Prints</h1>
+                        <p class="project-descrip yellow">Project documentation coming soon!</p>
+                    </div>
+                    <div class="project-col-right">
+                        <h1 class="project-year yellow">2018</h1>
+                        <p class="project-categ yellow">Data Visualization, Graphic Design, Print</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv">
+                <a class="div-link" href="oldindex.html" onclick="changeColor('#E68599');">
+                    <div class="project-container pinkproj" id="oldportolio-proj">
+                        <div class="project-col">
+                            <h1 class="project-title pink">Earlier Projects</h1>
+                            <p class="project-descrip pink">My former portfolio site, containing projects up to 2018.</p>
+                        </div>
+                        <div class="project-col-right">
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <a class="div-link" href="oldindex.html" onclick="changeColor('#E68599');">
-        <div class="project-container pinkproj" id="oldportolio-proj">
-            <h1 class="project-title pink">Earlier Projects</h1>
-            <p class="project-descrip pink">My former portfolio site, containing projects up to 2018.</p>
-        </div>
-    </a>
-    </div>
+        <script>
+        jQuery(document).ready(function (e) {
+            jQuery("#myBtnContainer .btn-expand").click(function (e) {
+                jQuery('.collapsible').toggle("slide", {
+                    direction: "right"
+                }, 2000);
+            });
+        });
 
-    <script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+        $("button").on("click", function() {
+            var el = $(this);
+            if (el.text() == el.data("text-swap")) {
+                el.text(el.data("text-original"));
+            } else {
+                el.data("text-original", el.text());
+                el.text(el.data("text-swap"));
+            }
+        });
+        // ✕
+        </script>
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        <script type="text/javascript">
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
 
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("butn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        </script>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
             modal.style.display = "none";
         }
-    }
-</script>
 
-</body>
-</html>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+    </body>
+    </html>
