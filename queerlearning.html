@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+<html>
+<head>
+    <title>Mark Séjourné</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style/queerlearning.css">
+</head>
+
+<body>
+
+    <svg id="fader"></svg>
+    <script>
+        fadeInPage();
+        function fadeInPage() {
+            if (!window.AnimationEvent) { return; }
+            var fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!window.AnimationEvent) { return; }
+            var anchors = document.getElementsByTagName('a');
+
+            for (var idx=0; idx<anchors.length; idx+=1) {
+                if (anchors[idx].hostname !== window.location.hostname ||
+                anchors[idx].pathname === window.location.pathname) {
+                    continue;
+                }
+                anchors[idx].addEventListener('click', function(event) {
+                    var fader = document.getElementById('fader'),
+                    anchor = event.currentTarget;
+
+                    var listener = function() {
+                        window.location = anchor.href;
+                        fader.removeEventListener('animationend', listener);
+                    };
+                    fader.addEventListener('animationend', listener);
+
+                    event.preventDefault();
+                    fader.classList.add('fade-in');
+                });
+            }
+        });
+        window.addEventListener('pageshow', function (event) {
+            if (!event.persisted) {
+                return;
+            }
+            var fader = document.getElementById('fader');
+            fader.classList.remove('fade-in');
+        });
+
+    </script>
+
+
+
+
+    <!-- TOP NAVIGATION -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a class="navtitle" href="index.html">MARK SÉJOURNÉ</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="menulink"id="myBtn">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTACT POPUP -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="https://formspree.io/mark_sejourne@brown.edu">
+                <input type="email" name="email" placeholder="Your email">
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <h1 class="project-title blue">Map of Queer Learning</h1>
+
+    <div class="disclaimer-div">
+        <p class="disclaimer">
+            This project is composed of anonymous submissions by Brown students, alumni, and professors,
+            detailing stories of their queer experiences on campus. Specifically,
+            my prompt for stories asked about “moments of queer learning” on
+            Brown’s campus. “Learning,” in this sense, could take the form of
+            pain, joy, strength, normalcy, defiance, defeat, love, loneliness —
+            anything.
+            <br><br>
+            The nature of queer experience is often one of
+            privacy: quiet words exchanged between individuals or a look into
+            the mirror in solitude. Moments of queerness can also be loud,
+            radical, combustive, and widely heard. All of these stories should
+            be documented.
+            <br><br>
+            The mission of these A.R. installations and the accompanying book
+            is to share these stories, moments, and experiences
+            with one another, to document them, immortalize them, and,
+            effectively, to ‘queer the space’ which is Brown University’s
+            campus.</p>
+        </div>
+
+        <div class="section-container">
+        <h2>Augmented Reality Demo</h2>
+        <p>After I completed the print run of the
+            <span style="font-style: italic;">Map of Queer Learning</span>
+            book and wrote about it in <a style="color: #323232;font-weight: bold;"href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7">this Medium article,</a>
+            I started receiving emails and messages from friends, classmates, and
+            strangers, asking if I planned to create a second edition of the
+            book. People seemed eager to contribute their experiences.
+            </p><p>
+            I wanted to continue the project in a way that would allow it
+            to be extensible and to live on even after I leave Brown, in case a future
+            student is interested in taking it over. I decided to use Augmented
+            Reality to craft an entirely new form of the map -- one which integrates
+            the stories directly into their settings throughout campus. The video
+            below shows one of the A.R. installations in action.
+            <br><br>
+            This format also broadened the reach of the project. Any passerby
+            who notices one of the small blue plaques gets immediate access to
+            the stories of past and present LGBTQ+ life at Brown.
+            </p>
+        <video id="ar-video" controls>
+            <source src="images/queerlearning/final-queer-AR.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section-container">
+        <h2>Map of Queer Learning Book</h2>
+        <p style="margin-bottom:-15px;">The original iteration of the Map of Queer Learning was a single
+            edition of four 25-page cyanotype-printed and hand-bound books.
+            <a style="color: #323232; font-weight: bold;"href="https://medium.com/@mark_sejourne/documenting-moments-of-queer-learning-at-brown-university-871748257bd7">Click here</a>
+            to read about my process for creating the books, or keep scrolling to
+            read the scanned version.
+            </p>
+        </div>
+        <div class="section-container-wide">
+            <img src="images/queerlearning/1.png" class="pagespic" alt="">
+            <img src="images/queerlearning/2.png" class="pagespic" alt="">
+            <img src="images/queerlearning/3.png" class="pagespic" alt="">
+            <img src="images/queerlearning/4.png" class="pagespic" alt="">
+            <img src="images/queerlearning/5.png" class="pagespic" alt="">
+            <img src="images/queerlearning/6.png" class="pagespic" alt="">
+            <img src="images/queerlearning/7.png" class="pagespic" alt="">
+            <img src="images/queerlearning/8.png" class="pagespic" alt="">
+            <img src="images/queerlearning/9.png" class="pagespic" alt="">
+            <img src="images/queerlearning/10.png" class="pagespic" alt="">
+            <img src="images/queerlearning/11.png" class="pagespic" alt="">
+            <img src="images/queerlearning/12.png" class="pagespic" alt="">
+            <img src="images/queerlearning/13.png" class="pagespic" alt="">
+            <img src="images/queerlearning/14.png" class="pagespic" alt="">
+            <img src="images/queerlearning/15.png" class="pagespic" alt="">
+</div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+
+
+
+                </body>

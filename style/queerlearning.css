@@ -1,0 +1,628 @@
+
+@font-face {
+    font-family: 'juni-boldcondensed';
+    src: url("fonts/junicode-boldcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular';
+    src: url("fonts/Folio-Light.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-bold';
+    src: url("fonts/junicode-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-regular-condensed';
+    src: url("fonts/junicode-regularcondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'juni-italic-condensed';
+    src: url("fonts/junicode-italiccondensed-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'folio';
+    src: url("fonts/Folio-Light.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'folio-med';
+    src: url("fonts/folio.woff");
+    font-weight: Medium;
+    font-style: normal;
+}
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: #323232;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+/* TOP NAVIGATION MENU  */
+nav {
+    padding: 70px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 80px;
+    /* font-family: benton-sans, sans-serif; */
+    font-family: 'juni-bold';
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    color: #323232;
+}
+
+#ar-video {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: block;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.navtitle {
+    width: 200px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+
+/* //////////////////////////////// */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F9AE34;
+    color: #323232;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'folio-med';
+    font-size: 20px;
+    font-weight: Medium;
+    color: #323232;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+
+h5 {
+    font-family: 'folio-med', sans-serif;
+    font-size: 22px;
+    color: #323232;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'folio-med';
+    font-size: 20px;
+    color: #323232;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.project-title {
+    font-family: 'juni-regular-condensed';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 55px;
+    text-align: center;
+    /* color: #323232; */
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.wide-container {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.disclaimer-div {
+    width: 60%;
+    border: 1px solid #323232;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* padding: 30px; */
+}
+
+.disclaimer {
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: auto;
+    margin: 40px;
+    -webkit-text-stroke-width: 0.35px;
+    -webkit-text-stroke-color: #323232;
+}
+
+p {
+        font-family: 'folio';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: auto;
+        -webkit-text-stroke-width: 0.35px;
+        -webkit-text-stroke-color: #323232;
+}
+
+#disclaim-ul {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.disclaim-li {
+    font-family: 'folio', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+    -webkit-text-stroke-width: 0.35px;
+    -webkit-text-stroke-color: #323232;
+    /* line-height: auto; */
+    /* margin: 40px; */
+}
+
+video {
+    margin-bottom: 100px;
+}
+
+.pagespic {
+    margin: 0 auto;
+    width: 100%;
+}
+
+video:focus {
+    outline:none;
+}
+
+h2 {
+    font-size: 35px;
+    font-family:'juni-regular-condensed';
+    margin-bottom: -10px;
+    margin-top: 40px;
+}
+
+.body-text {
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: auto;
+    -webkit-text-stroke-width: 0.35px;
+    -webkit-text-stroke-color: #323232;
+}
+
+.section-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.section-container-wide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cd-pic {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#cd-descrip {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.flex-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-container ul li {
+    list-style: none;
+    flex: 0 0 33%;
+    margin: 0 auto;
+}
+
+.shrinker {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.insta-pic {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+}
+
+.lil-pic {
+    width: 87%;
+}
+
+.border-pic {
+    width: 87%;
+    border: 3px solid #323232;
+}
+
+#animations-descrip.body-text {
+    margin-bottom: -50px;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+}
+
+#descrip-container {
+    margin-bottom: -60px;
+}
+
+#concert-descrip {
+    width: 60%;
+}
+
+.full-pic {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* CONTACT MODAL STYLING */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+    z-index: 100;
+
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 5px;
+    min-height: 20px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea {
+    display: block;
+    padding: 5px;
+    width: 90%;
+    min-height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid #323232;
+    background-color: transparent;
+    color: black;
+}
+
+textarea, select, input, button {
+    outline: none;
+    font-family: 'juni-regular';
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #323232;
+}
+
+button {
+    float: right;
+    margin-right: 10%;
+    background-color: #323232;
+    border-radius: 0;
+    border: none;
+    color: white;
+    padding: 10px;
+    min-width: 60px;
+    cursor: pointer;
+    /* padding-left, padding-right: 7px; */
+}
+
+/* Modal Content */
+.modal-content {
+    float: right;
+    background-color: #fafafa;
+    border: 1px solid #323232;
+    padding: 30px;
+    /* border: 1px solid #888; */
+    /* border-radius: 20px; */
+    width: 40%;
+    margin-right: 30px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+    color: #323232;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #E68599;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .flex-container ul li {
+        list-style: none;
+        flex: 0 49%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .navtitle {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .nav-left {
+        /* padding-left: 0px; */
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    #persona-div {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        /* max-width: 100%; */
+    }
+
+    #top {
+        margin-top: -30px;
+    }
+
+    #bottom {
+        margin-top: 20px;
+    }
+
+    #bottom1 {
+        margin-top: 20px;
+    }
+
+    #bottom2 {
+        margin-top: 20px;
+    }
+
+    .lil-pic {
+        width: 95%;
+    }
+
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+    .disclaimer-div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .disclaimer {
+        -webkit-text-stroke-width: 0px;
+    }
+
+    .body-text {
+        -webkit-text-stroke-width: 0px;
+    }
+
+    .disclaim-li {
+        -webkit-text-stroke-width: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .wide-container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #concert-descrip {
+        width: 90%;
+    }
+
+    #phone-pic {
+        width: 100%;
+    }
+
+    #phone-div {
+        width: 100%;
+        max-width: 70%;
+    }
+    .col {
+        width: 100%;
+        max-width: 100%;
+    }
+    #brief-div {
+        padding: 0px;
+    }
+    .disclaimer-div {
+        width: 80%;
+    }
+
+    #top {
+        margin-top: -30px;
+    }
+
+    #bottom {
+        margin-top: 20px;
+    }
+
+    #bottom1 {
+        margin-top: 20px;
+    }
+
+    #bottom2 {
+        margin-top: 20px;
+    }
+
+    .lil-pic {
+        width: 95%;
+    }
+
+    nav {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .navtitle {
+        width: auto;
+    }
+    nav {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    nav .nav {
+        padding: 0px;
+    }
+}
