@@ -13,6 +13,11 @@
 <body>
     <svg id="fader"></svg>
     <script>
+
+    function changeColor(newColor) {
+        var elem = document.getElementById('fader');
+        elem.style.background = newColor;
+    }
     fadeInPage();
     function fadeInPage() {
         if (!window.AnimationEvent) { return; }
@@ -21,7 +26,7 @@
     }
     document.addEventListener('DOMContentLoaded', function() {
         if (!window.AnimationEvent) { return; }
-        var anchors = document.getElementsByTagName('a');
+        var anchors = document.querySelectorAll('a:not(.menulink)');
 
         for (var idx=0; idx<anchors.length; idx+=1) {
             if (anchors[idx].hostname !== window.location.hostname ||
@@ -51,7 +56,7 @@
             fader.classList.remove('fade-in');
         });
 
-    </script>
+        </script>
 
 
 

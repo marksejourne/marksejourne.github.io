@@ -149,6 +149,19 @@ h4 {
     margin-left: 10%;
 }
 
+.p-statement {
+    font-family: 'folio-med';
+    font-size: 18px;
+    font-weight: Medium;
+    color: #fafafa;
+    /* text-align: left; */
+    margin-bottom: 0px;
+    /* width: 90%; */
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 h5 {
     font-family: 'folio-med', sans-serif;
     font-size: 22px;
@@ -261,7 +274,7 @@ hr {
 
 .disclaimer-div {
     width: 35%;
-    border: 1px solid #fafafa;
+    /* border: 1px solid #fafafa; */
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 100px;
@@ -293,6 +306,31 @@ h2 {
     letter-spacing: -0.0025em;
     color: #fafafa;
     margin-bottom: 50px;
+}
+
+.nom-body-p {
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: -0.0025em;
+    color: #fafafa;
+    text-align: left;
+}
+
+.body-ul {
+    font-family: 'folio';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: -0.0025em;
+    color: #fafafa;
+}
+
+.body-ul li {
+    margin-bottom: 10px;
 }
 
 .specifics {
@@ -332,6 +370,120 @@ h2 {
     width: 100%;
     margin: 0 auto;
     margin-top: -30px;
+}
+
+.sub-prob {
+    font-family: 'folio-med';
+    font-size: 18px;
+    font-weight: Medium;
+    color: #fafafa;
+    margin-bottom: 40px;
+}
+
+.sub-expl {
+    margin-top: 5px;
+}
+
+.loop-head {
+    font-family: 'folio-med';
+    font-size: 18px;
+    font-weight: Medium;
+    color: #fafafa;
+    /* margin-bottom: 40px; */
+    margin-top: -20px;
+}
+
+.iter-div {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    /* border: 1px solid #fafafa; */
+
+}
+
+#round1-div {
+    /* width:50%; */
+    flex: 0 0 25%;
+    /* border: 1px solid #fafafa; */
+    margin-right: 10%;
+
+}
+
+#round2-div {
+    flex: 0 0 70%;
+    /* border: 1px solid #fafafa; */
+
+}
+
+#round3-div {
+    flex: 0 0 27%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid #fafafa; */
+
+}
+#round4-div {
+    flex: 0 0 27%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid #fafafa; */
+
+}
+#round5-div {
+    flex: 0 0 27%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid #fafafa; */
+}
+
+#round6-div {
+    position: relative;
+    text-align: left;
+    /* border: 1px solid #fafafa; */
+}
+
+#r6-head {
+    position: absolute;
+    /* width: 35%; */
+    top: 40px;
+    left: 30px;
+}
+
+#over-text {
+    position: absolute;
+    width: 35%;
+    top: 30px;
+    left: 30px;
+    /* top: 20px; */
+    /* left: 0px; */
+}
+
+.big-iter-div {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.stages-img {
+    width: 100%;
+}
+
+.platforms-img {
+    width: 100%;
+    position: relative
+}
+
+
+#sketch-img {
+    width: 100%;
+    /* float: left; */
+}
+
+#mocks-img {
+    width: 97%;
+    /* border: 1px solid #fafafa; */
+
+    /* float: left; */
 }
 
 /* CONTACT MODAL STYLING */

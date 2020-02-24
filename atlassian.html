@@ -14,45 +14,50 @@
 
     <svg id="fader"></svg>
     <script>
+
+    function changeColor(newColor) {
+        var elem = document.getElementById('fader');
+        elem.style.background = newColor;
+    }
     fadeInPage();
     function fadeInPage() {
         if (!window.AnimationEvent) { return; }
         var fader = document.getElementById('fader');
         fader.classList.add('fade-out');
     }
-        document.addEventListener('DOMContentLoaded', function() {
-            if (!window.AnimationEvent) { return; }
-            var anchors = document.getElementsByTagName('a');
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return; }
+        var anchors = document.querySelectorAll('a:not(.menulink)');
 
-               for (var idx=0; idx<anchors.length; idx+=1) {
-                   if (anchors[idx].hostname !== window.location.hostname ||
-               anchors[idx].pathname === window.location.pathname) {
-               continue;
-           }
-           anchors[idx].addEventListener('click', function(event) {
-              var fader = document.getElementById('fader'),
-                  anchor = event.currentTarget;
+        for (var idx=0; idx<anchors.length; idx+=1) {
+            if (anchors[idx].hostname !== window.location.hostname ||
+                anchors[idx].pathname === window.location.pathname) {
+                    continue;
+                }
+                anchors[idx].addEventListener('click', function(event) {
+                    var fader = document.getElementById('fader'),
+                    anchor = event.currentTarget;
 
-              var listener = function() {
-                  window.location = anchor.href;
-                  fader.removeEventListener('animationend', listener);
-              };
-              fader.addEventListener('animationend', listener);
+                    var listener = function() {
+                        window.location = anchor.href;
+                        fader.removeEventListener('animationend', listener);
+                    };
+                    fader.addEventListener('animationend', listener);
 
-              event.preventDefault();
-              fader.classList.add('fade-in');
-           });
-       }
-    });
-    window.addEventListener('pageshow', function (event) {
-      if (!event.persisted) {
-        return;
-      }
-      var fader = document.getElementById('fader');
-      fader.classList.remove('fade-in');
-    });
+                    event.preventDefault();
+                    fader.classList.add('fade-in');
+                });
+            }
+        });
+        window.addEventListener('pageshow', function (event) {
+            if (!event.persisted) {
+                return;
+            }
+            var fader = document.getElementById('fader');
+            fader.classList.remove('fade-in');
+        });
 
-    </script>
+        </script>
 
 
 
@@ -110,12 +115,12 @@
 
     <!-- <marquee class="GeneratedMarquee" direction="left" scrollamount="9" behavior="scroll">PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS</marquee> -->
     <div class="disclaimer-div">
-        <p class="disclaimer">While I am unable to publicly present my final
+        <!-- <p class="disclaimer">While I am unable to publicly present my final
             designs for Atlassian at this time, I have
             documented as much of my process as possible
             below. Please reach out via my Contact page
             if you’d like to hear more about my work on
-            the Confluence app.</p>
+            the Confluence app.</p> -->
         </div>
 
         <div class="bodycontent-div">
@@ -415,6 +420,43 @@
                             maximizing impact while minimizing effort and cost.
                         </p>
 
+                        <h2>Target Problem</h2>
+                        <!-- <p class="nom-body-p">
+                            All things considered, it became clear which area
+                            of the mobile experience I should tackle. Finally, I
+                            had identified my primary problem:
+                        </p> -->
+                        <h4 class="p-statement">"The create button on Confluence Mobile is restrictive.
+                        It has only one mode, which gives way to a blank document.
+                        This fails to take advantage of mobile features and capabilities."</h4>
+                        <p class="nom-body-p">
+                            This problem statement can be broken down into two simpler parts:
+                        </p>
+                        <ol class="body-ul">
+                            <li>
+                                <span class="sub-prob">Phones are not desktop computers...</span>
+                                <p class="sub-expl">so we shouldn't
+                                pretend that they are. There's a reason authors
+                                use computers instead of cell phones to write their books.
+                                Computers are great for putting a lot of words on a page. Phones, on the other hand,
+                                are perfect for taking a photo of a whiteboard at the
+                                end of a meeting, taking videos of product demos, or recording audio from a user study.</p>
+                            </li>
+                            <li>
+                                <span class="sub-prob">Pages created on mobile are likely imperfect.</span>
+                                <p class="sub-expl">
+                                    Mobile interfaces don't lend themselves to
+                                    complex formatting, and the primary mobile
+                                    use case (on-the-go) isn't conducive to
+                                    thorough proofreading. So we should make it
+                                    easier for our users to make their pages private
+                                    when they create on mobile. Users'
+                                    brainstorming notes and quick ideas don't
+                                    need to be broadcast to their entire company.</p>
+                                </li>
+                        </ol>
+                        <!-- <p class="body-p">In other words: phones are not desktop computers. </p> -->
+
                         <h2>Iterative Design</h2>
                         <p class="body-p">
                             With a clearly defined problem space and a boatload
@@ -429,7 +471,57 @@
                             so on and so forth until I landed on my finalized
                             concept and design.
                         </p>
+                        <div class="iter-div">
+                            <div id="round1-div">
+                                <p class="loop-head">Round 1: Sketching</p>
+                                <img id="sketch-img"src="images/atlassian/sketches.jpeg" alt="">
+                                <p class="nom-body-p"></p>
+                            </div>
+                            <div id="round2-div">
+                                <p class="loop-head">Round 2: Layout Option Mockups</p>
+                                <img id="mocks-img"src="images/atlassian/prelim-mocks2.png" alt="">
+                                <p class="nom-body-p"></p>
+                            </div>
+                        </div>
 
+                        <div class="iter-div">
+                            <div id="round3-div">
+                                <p class="loop-head">Round 3:</p>
+                                <img class="stages-img"src="images/atlassian/r3.png" alt="">
+                                <p class="nom-body-p">Chose to use the drawer layout
+                                    because it was the extensible and user feedback
+                                indicated that it felt the most intuitive.</p>
+                            </div>
+                            <div id="round4-div">
+                                <p class="loop-head">Round 4:</p>
+                                <img class="stages-img"src="images/atlassian/r4.png" alt="">
+                                <p class="nom-body-p">Restructured the menu options
+                                to offer users maximum control and flexibility; Designed new set of
+                            icons to make menu functionality clearer.</p>
+                            </div>
+                            <div id="round5-div">
+                                <p class="loop-head">Round 5:</p>
+                                <img class="stages-img"src="images/atlassian/r5.png" alt="">
+                                <p class="nom-body-p">Simplified "private/public" toggle
+                                    in order to comply with Atlassian Design Guidelines,
+                                    Apple Human Interface Guidelins, and WCAG.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="big-iter-div">
+                            <div id="round6-div">
+                                <p class="loop-head" id="r6-head">Round 6:</p>
+                                <p class="nom-body-p" id="over-text">Designing the menu interface
+                                to extend across platforms, devices, and orientations.</p>
+                                <img class="platforms-img"src="images/atlassian/platforms.png" alt="">
+                            </div>
+                        </div>
+
+
+
+                    <div class="bodycontent-div">
 
                     <h2>Result</h2>
                     <p class="body-p">I ended up creating a feature that I’m
@@ -442,6 +534,7 @@
                         I would be happy to speak further about this project
                         privately. Please reach out via my ‘Contact’ page above.
                         </p>
+                        <!-- <img class=""src="images/atlassian/crop.gif" alt=""> -->
                     </div>
 
 
